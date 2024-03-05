@@ -17,6 +17,8 @@ redirect_from:
 
 💻  I am also interested in advances in Machine Learning, Statistics and Computer Vision.
 
+📝  Constantly adding blogs and posts about the new projects that I did or new things that I've learned on my journey of becoming a true Data Wizard
+
 # Selected Experience
 
 ## 
