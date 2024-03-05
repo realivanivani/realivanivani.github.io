@@ -23,13 +23,13 @@ redirect_from:
 
 Product Data Manager in Continental, Serbia
 ======
-![A parrot working on a computer with robotic arm](/images/parrot_comp_robot.jfif){: .align-right width="300"}
+![A parrot working on a computer with robotic arm](/images/parrot_robot_arms.jfif){: .align-right width="300"}
 As a Data Manager within Continental's R&D User Experience unit, I am immersed in the dynamic world of data analytics, focusing on Manufacturing Execution System (MES) data on AWS and Oracle across the whole R&D domains, from Mechanical Engineering to Optical and Display Technologies.My mission? To wield the potent force of data, crafting actionable insights that resonate with not just leadership and clientele, but engineers as well, meticulously sculpted into captivating narratives through the lens of Power BI. But my journey doesn't stop there. Fuelled by an unyielding commitment to innovation, I lead the charge in pioneering state-of-the-art algorithms using Computer Vision, poised to revolutionize early-stage defect detection within the manufacturing arena. Guided by a relentless pursuit of excellence and an unwavering zeal for pushing the boundaries of possibility in data analytics, I flourish in an ecosystem where data-driven decision-making reigns supreme.
 
 Researcher in Computational Biology Lab w Prof. Orozco, Barcelona, Spain
 ======
-![An astronaut exploring DNA in space](/images/dna_doublehelix_infoinback.jfif){: .align-right width="300"}
- Manufacturing Execution System (MES) data on AWS and Oracle across the whole R&D domains, from Mechanical Engineering to Optical and Display Technologies.My mission? To wield the potent force of data, crafting actionable insights that resonate with not just leadership and clientele, but engineers as well, meticulously sculpted into captivating narratives through 
+![DNA surrounded with proteins](/images/dna_surrounded_proteins.jfif){: .align-right width="300"}
+My academic background lies in unlocking the secrets of DNA through computational biology. Ever wondered how drugs are designed to target DNA? That's where my journey began! As a PhD in Computational Biology, I wasn't dissecting DNA in a lab (although that's pretty cool too), but diving into the world of computer simulations. My specialty? Fine-tuning programs to understand how DNA moves and interacts with proteins. Think of it as creating super accurate movies of DNA in action!  This not only helps us grasp how DNA works in different environments, but also plays a key role in designing new drugs. On top of my PhD research, I've been involved in various projects, even scoring a publication in the famous Nature Methods journal (check out my Research tab for more!).  To expand my horizons, I also visited Dr. Kool's lab at Stanford, where I got to collaborate with the pharmaceutical industry.  So, yeah, I'm passionate about using computers to unlock the mysteries of DNA and advance medical science – all in a day's work!
 
 
 Getting started
