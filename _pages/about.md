@@ -34,7 +34,7 @@ My academic background lies in unlocking the secrets of DNA through computationa
 
 ## Data Analyst in International Committee of the Red Cross, Geneva/Amman/Damascus/Jerusalem/Caracas
 ======
-![DNA surrounded with proteins](/images/red_parrot_on_redcross_boxes.jfif){: .align-right width="200"}
+![Red Guacamaya on red cross aid boxes](/images/parrot_on_redcross_boxes.jfif){: .align-right width="200"}
 After my scientific career, my path took a different turn – the world of humanitarian aid!  Working for the ICRC as a Data Analyst and Data Manager Lead in the Protection unit was an incredible experience.  I wasn't crunching numbers on Wall Street, but diving deep into data from around the world both remotely and on-site in places like Geneva, Syria, Palestine, and Venezuela.  This data came from real people in real need, and my job was to make sure it was handled securely while also being readily available.  Think building reports and dashboards that helped both aid workers on the ground and colleagues back at HQ make informed decisions, fast.  It was all about using data to help the ICRC reach those who needed it most.  In short, using my data skills to make a real difference in some of the world's toughest situations.
 
 
