@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋 Hello, I'm Ivan DataWiz Ivani!"
+title: "👋 Hello, I'm DataWiz Ivan Ivani!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![An astronaut looking at a huge DNA double helix in space](/images/dna_in_space.jfif)
+![An astronaut looking at a huge DNA double helix in space](/images/dna_in_space.jfif){: .alig-right width="300px"}
 👨‍💻  I'm a Data Scientist and Analyst with a PhD in Bioinformatics and Computational Chemistry from University of Barcelona.
 
 🧬  My research topics were mostly in the world of Molecular Dynamics of DNA and proteins, Quantum Mechanics calculations, drug-discovery, force-field parameterization and experimental validation.
