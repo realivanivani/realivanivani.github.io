@@ -34,7 +34,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=GqCZ-0QAAAAJ"
   impactstory      : # URL
   orcid            : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=ivan+ivani"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=ivan+ivani"
   researchgate     : # URL
 
   # Repositories and software development
