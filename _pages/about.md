@@ -9,15 +9,16 @@ redirect_from:
 ---
 
 ![An astronaut looking at a huge DNA double helix in space](/images/dna_in_space.jfif){: .align-right width="300px"}
-👨‍💻  I'm a Data Scientist and Analyst with a PhD in Bioinformatics and Computational Chemistry from University of Barcelona.
 
-🧬  My research topics were mostly in the world of Molecular Dynamics of DNA and proteins, Quantum Mechanics calculations, drug-discovery, force-field parameterization and experimental validation.
+👨‍💻  I'm a Data Scientist and Analyst with a PhD in Bioinformatics and Computational Chemistry from University of Barcelona.
 
 💼  My work experience range from research in academia, data analytics in humanitarian sector to data science in automotive industry.
 
+🧬  My research topics were mostly in the world of Molecular Dynamics of DNA and proteins, Quantum Mechanics calculations, drug-discovery, force-field parameterization and experimental validation.
+
 💻  I am also interested in advances in Machine Learning, Statistics and Computer Vision.
 
-📝  Constantly adding blogs and posts about the new projects that I did or new things that I've learned on my journey of becoming a true full-stack Data Wizard
+📝  I'm constantly adding blogs and posts about the new projects that I did or new things that I've learned on my journey of becoming a true full-stack Data Wizard
 
 # Selected Experience
 

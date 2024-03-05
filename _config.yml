@@ -21,7 +21,7 @@ repository               : "realivanivani/realivanivani.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "slika_s_papagajem2.jpeg"
+  avatar           : "slika_s_papagajom2.jpeg"
   name             : "Ivan Ivani, PhD."
   bio              : "Data Scientist with a PhD in Bioinformatics and a lot of life experience"
   location         : "Novi Sad, Serbia"
