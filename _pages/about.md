@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![Red parrot doing Data Science work](/images/red_parrot_cubicle_2.jfif){: .align-right width="200"}
+![Red parrot doing Data Science work](/images/red_parrot_cubicle_2.jfif){: .align-right width="250"}
 👨‍💻  I'm a Data Scientist and Analyst, armed with a PhD in Bioinformatics and Computational Chemistry from the prestigious University of Barcelona.
 
 💼 With a diverse background spanning academic research, data analytics in the humanitarian sector, and cutting-edge data science in the automotive industry, I bring a wealth of experience to the table.
