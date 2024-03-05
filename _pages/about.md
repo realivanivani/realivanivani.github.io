@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![Red parrot doing Data Science work](/images/red_parrot_cubicle.jfif){: .align-right width="300"}
+![Red parrot doing Data Science work](/images/red_parrot_cubicle_2.jfif){: .align-right width="250"}
 👨‍💻  I'm a Data Scientist and Analyst, armed with a PhD in Bioinformatics and Computational Chemistry from the prestigious University of Barcelona.
 
 💼 With a diverse background spanning academic research, data analytics in the humanitarian sector, and cutting-edge data science in the automotive industry, I bring a wealth of experience to the table.
@@ -23,7 +23,7 @@ redirect_from:
 
 Product Data Manager in Continental, Serbia
 ======
-![A parrot working on a computer with robotic arm](/images/parrot_robot_arms.jfif){: .align-right width="300"}
+![A parrot working on a computer with robotic arm](/images/parrot_comp_robot2.jfif){: .align-right width="300"}
 As a Data Manager within Continental's R&D User Experience unit, I am immersed in the dynamic world of data analytics, focusing on Manufacturing Execution System (MES) data on AWS and Oracle across the whole R&D domains, from Mechanical Engineering to Optical and Display Technologies.My mission? To wield the potent force of data, crafting actionable insights that resonate with not just leadership and clientele, but engineers as well, meticulously sculpted into captivating narratives through the lens of Power BI. But my journey doesn't stop there. Fuelled by an unyielding commitment to innovation, I lead the charge in pioneering state-of-the-art algorithms using Computer Vision, poised to revolutionize early-stage defect detection within the manufacturing arena. Guided by a relentless pursuit of excellence and an unwavering zeal for pushing the boundaries of possibility in data analytics, I flourish in an ecosystem where data-driven decision-making reigns supreme.
 
 Researcher in Computational Biology Lab w Prof. Orozco, Barcelona, Spain
