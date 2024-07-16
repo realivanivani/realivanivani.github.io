@@ -1,19 +1,20 @@
 ---
 layout: archive
-title: "CV"
+title: "Resume"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+Ivan Ivani
+======
 
 I am a Data Scientist with a strong scientific background in bioinformatics and drug discovery, and five years of experience in data analytics in an international organization. I also managed small data teams of data managers and analysts. I am looking forward to bringing my international experience, problem-solving mindset, and enthusiasm to a new environment on the edge of data science and biotech.
 
 Education
 ======
-* Ph.D in Bioinformatics and biomedicine, University of Barcelona, 2016
+* Ph.D in Bioinformatics and Biomedicine, University of Barcelona, 2016
 * M.S. in Biophysics, Charles University in Prague, 2010
 * B.S. in Physics, Charles University in Prague, 2008
 
