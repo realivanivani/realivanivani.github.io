@@ -20,13 +20,15 @@ Education
 
 Work experience
 ======
-* Continental UX: Senior Data Analyst      Oct 2023-
+* Continental UX: Senior Data Analyst
+  Oct 2023-
   * Established and maintained an efficient data management system for optical experiments and production data, supporting R&D teams globally.
   * Specialized in preparing graphs and processing diverse datasets from optical experiments and production End-of-Line (EOL) plants.
   * Created interactive dashboards using Python and PowerBI to facilitate seamless collaboration and informed decision-making.
   * Contributed to the team’s expansion and development of Data Science infrastructure and streamlined data processes.
 
-* International Committee of the Red Cross: Data Analytics Lead      Jun 2018 - Sep 2023
+* International Committee of the Red Cross: Data Analytics Lead
+  Jun 2018 - Sep 2023
   * Handled highly sensitive personal data, ensuring secure and ethical management.
   * Prepared intricate reports and infographics for strategic decision-making.
   * Led small teams, fostering collaboration and efficient data handling, and trained colleagues in complex SQL and Python data processes.
@@ -36,7 +38,8 @@ Work experience
   * Supported delegates and operations with reports and analyses, enhancing data-driven decision-making.
   * Evaluated and improved the quality of Prot6 databases and infrastructure.
 
-* Institute for Research in Biomedicine: Research Scientist        Jan 2010 - Jun 2017
+* Institute for Research in Biomedicine: Research Scientist
+  Jan 2010 - Jun 2017
   * Conducted molecular dynamics simulations of DNA and protein molecules, optimizing software tools like AMBER and Gromacs.
   * Applied advanced statistical methods to interpret biological data from experiments and simulations.
   * Set up a NoSQL database for storing MD simulations and contributed to disseminating research findings through graphical visualizations and scientific publications.
