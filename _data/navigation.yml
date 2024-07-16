@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "CV"
-    url: /files/Resume_IvanIvani_2024.pdf
+    url: /cv/
 
   - title: "Portfolio"
     url: /portfolio/    
@@ -12,3 +12,5 @@ main:
   - title: "Publications"
     url: https://scholar.google.com/citations?user=GqCZ-0QAAAAJ
         
+  - title: "Resume"
+    url: /files/Resume_IvanIvani_2024.pdf
