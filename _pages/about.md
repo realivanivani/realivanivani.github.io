@@ -19,11 +19,11 @@ redirect_from:
 📝 As I'm on a journey to become a serious Data Scientist, I am regularly sharing posts and know-hows on my [blogs and posts](https://realivanivani.github.io/year-archive/) about my projects and discoveries. The final aim? Becoming a true full-stack Data Wizard one day :)
 
 ---
+Here are some of my selected work experiences
+---
 
-Selected Experiences
-======
 
-## Product Data Manager in Continental, Serbia
+## Product Data Manager in UX RnD unit of Continental, Serbia
 ![A parrot working on a computer with robotic arm](/images/parrot_comp_robot2.jfif){: .align-right width="200"}
 As a Data Manager within Continental's R&D User Experience unit, I am immersed in the dynamic world of data analytics, focusing on Manufacturing Execution System (MES) data on AWS and Oracle across the whole R&D domains, from Mechanical Engineering to Optical and Display Technologies. My mission? To wield the potent force of data, crafting actionable insights that resonate with not just leadership and clientele, but engineers as well, meticulously sculpted into captivating narratives through the lens of Power BI. But my journey doesn't stop there. Fuelled by an unyielding commitment to innovation, I lead the charge in pioneering state-of-the-art algorithms using Computer Vision, poised to revolutionize early-stage defect detection within the manufacturing arena. Guided by a relentless pursuit of excellence and an unwavering desire to push the boundaries of possibility in data analytics, I flourish in an ecosystem where data-driven decision-making reigns supreme.
 
