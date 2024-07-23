@@ -150,38 +150,6 @@ While the `manufacturing` package is a robust tool for statistical process contr
 
 3. **Quality-Control**: This package focuses on quality control methods and includes tools for control charts, process capability indices, and other SPC techniques.
 
-### Comparison of Packages
-
-#### 1. SciPy and NumPy
-
-**Pros**:
-- Highly versatile and widely used in the data science community.
-- Extensive documentation and community support.
-- Can be used for a wide range of statistical and scientific computing tasks.
-
-**Cons**:
-- Requires more effort to implement SPC-specific tools compared to dedicated packages.
-
-#### 2. PySPC
-
-**Pros**:
-- Specifically designed for SPC.
-- Easy to use with built-in functions for creating various control charts.
-
-**Cons**:
-- Less widely used and supported compared to SciPy and NumPy.
-- May have fewer features than more comprehensive packages.
-
-#### 3. Quality-Control
-
-**Pros**:
-- Focuses on quality control methods.
-- Provides tools for control charts and process capability indices.
-
-**Cons**:
-- May not be as comprehensive as other packages.
-- Limited community support and documentation compared to larger packages.
-
 ### Example: Using PySPC for Control Charts
 
 Let's look at an example of creating a control chart using the PySPC package.
