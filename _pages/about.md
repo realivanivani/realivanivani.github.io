@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋 Hello, I'm DataWiz Ivan Ivani!"
+title: "👋 Hello, I'm Ivan Ivani!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -9,15 +9,19 @@ redirect_from:
 ---
 
 ![Red parrot doing Data Science work](/images/red_parrot_cubicle_2.jfif){: .align-right width="250"}
-👨‍💻  I'm a Data Scientist and Analyst, armed with a PhD in Bioinformatics and Computational Chemistry from the prestigious University of Barcelona.
+Here's a revised version of your "About Me" section:
 
-💼 With a diverse background spanning academic research, data analytics in the humanitarian sector, and cutting-edge data science in the automotive industry, I bring a wealth of experience to the table.
+👨‍💻 I am a Data Scientist and Analyst with a PhD in Bioinformatics and Computational Chemistry from the University of Barcelona.
 
-🧬 My research ventures delved deep into the realms of Structural Biology, encompassing Molecular Dynamics of DNA and proteins, Quantum Mechanics calculations, drug discovery, force-field parameterization, and experimental validation.
+💼 My career spans academic research, data analytics in the humanitarian sector, and innovative data science in the automotive industry, bringing a wealth of experience and expertise.
 
-💻 I'm passionate about staying at the forefront of technology, eagerly following advancements in Machine Learning, Statistics, and Computer Vision.
+🧬 My research has explored the fields of Structural Biology, focusing on Molecular Dynamics of DNA and proteins, Quantum Mechanics calculations, drug discovery, force-field parameterization, and experimental validation.
 
-📝 As a believer in knowledge transfer, I regularly contribute [blogs and posts](https://realivanivani.github.io/year-archive/) detailing my latest projects and discoveries, as I continue on my quest to ascend to the ranks of a true full-stack Data Wizard.
+💻 I am passionate about technology and keep up with the latest advancements in Machine Learning, Statistics, and Computer Vision.
+
+📝 As I'm on a journey to become a serious Data Scientist, I am regularly sharing posts and know-hows on my [blogs and posts](https://realivanivani.github.io/year-archive/) about my projects and discoveries. The final aim? Becoming a true full-stack Data Wizard one day :)
+
+---
 
 Selected Experiences
 ======
