@@ -10,13 +10,15 @@ redirect_from:
 
 ![Red parrot doing Data Science work](/images/red_parrot_cubicle_2.jfif){: .align-right width="250"}
 
-🦜 I am a Data Scientist and Analyst with a PhD in Bioinformatics and Computational Chemistry from the University of Barcelona.
+🦜 Welcome to my personal webpage! You are either lost or just interested in how I'm doing. 😊 For those who do not know me, let me briefly introduce myself...
+
+I am a Data Scientist and Analyst with a PhD in Bioinformatics and Computational Chemistry from the University of Barcelona.
 
 💼 My career spans academic research, data analytics in the humanitarian sector, and innovative data science in the automotive industry, bringing a wealth of experience and expertise.
 
 🧬 My research has explored the fields of Structural Biology, focusing on Molecular Dynamics of DNA and proteins, Quantum Mechanics calculations, drug discovery, force-field parameterization, and experimental validation.
 
-📝 As I'm on a journey to become a serious Data Scientist, I am regularly sharing posts and know-hows on my [blogs and posts](https://realivanivani.github.io/year-archive/) about my projects and discoveries. The final aim? Becoming a true full-stack Data Wizard one day :)
+As I'm on a journey to become a serious Data Scientist, I am regularly sharing posts and know-hows on my [blogs and posts](https://realivanivani.github.io/year-archive/) about my projects and discoveries. The final aim? Becoming a true full-stack Data Wizard one day :)
 
 ---
 Here are some of my selected work experiences
