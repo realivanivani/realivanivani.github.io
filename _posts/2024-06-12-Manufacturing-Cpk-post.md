@@ -87,12 +87,11 @@ where σ* is the sample standard deviation.
 * **Ppk** (Process Performance Index): Considers both actual performance and process centering.
    
    $$Ppk = \min \left( \frac{\text{USL} - \mu}{3\sigma*}, \frac{\mu - \text{LSL}}{3\sigma*} \right)$$
+
 where σ* is the sample standard deviation.
 
-
-**Note:** The choice between using the population standard deviation (σ) or the sample standard deviation (σ*) depends on the available data and the specific application.
-
-You might notice that the formulas for CpK and PpK are almost the same. The only difference lies in the denominator for the Upper and Lower statistics: Cpk is calculated using the WITHIN standard deviation, while Ppk uses the OVERALL standard deviation. Without boring you with the details surrounding the formulas for the standard deviations, think of the within standard deviation as the average of the subgroup standard deviations, while the overall standard deviation represents the variation of all the data. 
+**Note:** You might notice that the formulas for CpK and PpK are almost the same. The only difference lies in the denominator for the Upper and Lower statistics: Cpk is calculated using the WITHIN standard deviation, while Ppk uses the OVERALL standard deviation. Without boring you with the details surrounding the formulas for the standard deviations, think of the within standard deviation as the average of the subgroup standard deviations, while the overall standard deviation represents the variation of all the data. 
+Transfering it to numpy functions, `numpy.std(data)` calculates the sample standard deviation, while for the population standard deviation, you need to set the ddof (delta degrees of freedom) parameter to 0 (`numpy.std(data, ddof=0)`)
 
 ### Interpreting Cpk and Ppk Values
 
