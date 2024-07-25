@@ -62,10 +62,10 @@ While Cpk only measures process centering relative to specifications, PpK measur
 ### Formulas for Cp, Cpk, Pp, and Ppk
 
 In order to implement these indicators in python, we need to know how are they calculated. Before we dive into the formulas, let's difine some key terms:
-- $\text{USL}$ is the upper specification limit.
-- $\text{LSL}$ is the lower specification limit.
-- $\mu$ is the process mean.
-- $\sigma$ is the process standard deviation.
+- $$\text{USL}$$ is the upper specification limit.
+- $$\text{LSL}$$ is the lower specification limit.
+- $$\mu$$ is the process mean.
+- $$\sigma$$ is the process standard deviation.
 
 
 #### Process Capability Indices (Cp and Cpk)
