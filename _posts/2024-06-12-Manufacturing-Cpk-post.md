@@ -59,7 +59,7 @@ While Cpk only measures process centering relative to specifications, PpK measur
 
 * Cp, Cpk, Pp, and Ppk are valuable tools for understanding and improving process performance. By using these metrics, businesses can identify areas for improvement, reduce defects, and increase customer satisfaction. Learn more about Cpk and PpK at [Six Sigma Study Guide](sixsigmastudyguide.com).
 
-### Formulas for Cp, Cpk, Pp, and Ppk
+### 2.1 Formulas for Cp, Cpk, Pp, and Ppk
 
 In order to implement these indicators in python, we need to know how are they calculated. Before we dive into the formulas, let's difine some key terms:
 - $$\text{USL}$$ is the upper specification limit.
@@ -93,7 +93,7 @@ where σ* is the sample standard deviation.
 **Note:** You might notice that the formulas for CpK and PpK are almost the same. The only difference lies in the denominator for the Upper and Lower statistics: Cpk is calculated using the WITHIN standard deviation, while Ppk uses the OVERALL standard deviation. Without boring you with the details surrounding the formulas for the standard deviations, think of the within standard deviation as the average of the subgroup standard deviations, while the overall standard deviation represents the variation of all the data. 
 Transfering it to numpy functions, `numpy.std(data)` calculates the sample standard deviation, while for the population standard deviation, you need to set the ddof (delta degrees of freedom) parameter to 0 (`numpy.std(data, ddof=0)`)
 
-### Interpreting Cpk and Ppk Values
+### 2.2 Interpreting Cpk and Ppk Values
 
 In short, it is well known that a higher CpK or PpK values indicates a more capable process. **Values below 1 suggest frequent production of out-of-specification items, while those above 1.33 signal a highly capable process.** But let's understand the general scale:
 
@@ -102,11 +102,11 @@ In short, it is well known that a higher CpK or PpK values indicates a more capa
 * **Cpk and Ppk values are 1.67 < > 1.33:** The process is moderately capable, but there's still room for improvement.
 * **Cpk and Ppk values are > 1.67:** The process is highly capable and consistently meets specifications.
 
-#### Comparing Cpk and Ppk
+### Comparing Cpk and Ppk
 * **Cpk** reflects the process's potential capability assuming the process is centered.
 * **Ppk** reflects the actual process performance, considering both variation and centering.
 
-Therefore:
+  Therefore:
 * **If Cpk is significantly higher than Ppk:** The process is capable but not centered. Focusing on process centering can improve performance.
 * **If Cpk is similar to Ppk:** The process is relatively stable and centered. Further improvements might require reducing process variation.
 * **If Ppk is significantly higher than Cpk:** This might indicate a short-term improvement or an outlier in the data. Further investigation is needed.
@@ -117,7 +117,7 @@ Therefore:
 * **Process Stability:** Cpk assumes the process is in statistical control. If the process is unstable, Cpk might be misleading.
 
 ### Visual Representation
-A visual representation can often be more intuitive than just numbers. Control charts, histograms, and capability histograms can provide valuable insights into process behavior and performance.
+A visual representation can often be more intuitive than just numbers. Control charts, histograms, and capability histograms can provide valuable insights into process behavior and performance. That is the added value 
 
 **Remember:** While numerical values provide a quantitative measure, it's essential to combine them with visual analysis and process knowledge for a comprehensive understanding.
 
