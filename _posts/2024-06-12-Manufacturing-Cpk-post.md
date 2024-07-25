@@ -4,45 +4,125 @@ date: 2024-06-12
 permalink: /posts/2024/06/blog-post-1/
 tags:
   - manufacturing
+  - Quality Control
+  - PySPC
   - Cpk
+  - Ppk
   - Six Sigma
 ---
 
-### `manufacturing` Python  package- Ways to analyze manufacturing data 
+### Ways to analyze the `manufacturing` and quality controls using Python
 
-TEver heard of Six Sigma? It's a methodology for achieving near-perfect quality in manufacturing. But what if you could leverage Six Sigma tools right from your Python environment? That's where the manufacturing package comes in!
+Have you ever heard of Six Sigma? It's a methodology for achieving near-perfect quality in manufacturing. But what if you could leverage Six Sigma tools right from your Python environment? That's where the manufacturing package comes in!
 
-he modern factory floor generates a deluge of data, from sensor readings to production logs.  Python offers a robust ecosystem of libraries to harness this data for improved efficiency and quality control. Analyzing process data allows for the identification of trends, anomalies, and potential quality issues, enabling proactive quality control measures.  Furthermore, production data analysis reveals bottlenecks, allowing for optimized scheduling and maximized efficiency. These libraries, akin to specialized software modules, empower sophisticated data manipulation and analysis.
+In this blog post, I will cover some of the key concepts of quality control in a large scale manufacturing, as well as, tools and Python packages for analyzing it.
+
+## 1. Intro
+
+The modern factory floor generates a deluge of data, from sensor readings to production logs.  Python offers a robust ecosystem of libraries to harness this data for improved efficiency and quality control. Analyzing process data allows for the identification of trends, anomalies, and potential quality issues, enabling proactive quality control measures.  Furthermore, production data analysis reveals bottlenecks, allowing for optimized scheduling and maximized efficiency. These libraries, akin to specialized software modules, empower sophisticated data manipulation and analysis.
 
 Core libraries like Pandas excel at wrangling tabular data, the lifeblood of manufacturing records.  Pandas allows for data cleaning, transformation, and analysis, forming the bedrock of most data workflows.  NumPy, the workhorse for numerical computations, underpins many libraries and provides efficient data structures for large datasets.  SciPy, building on NumPy's foundation, offers a broader suite of scientific and engineering functions frequently employed in manufacturing analysis.
 
 By mastering these tools, manufacturers can transform raw data into actionable insights, driving data-driven decision making and achieving operational excellence.
 
-But, before going into ways how to process manufacturing data one should first understanding its' core concepts like CpK and Six Sigma Standards.
+But, before going into ways how to process manufacturing data one should first understanding its' core concepts like CpK, PpK and Six Sigma Standards.
 
-#### What is CpK?
+## 2. What are Cp, Cpk, Pp, and Ppk?
 
-CpK, or the Process Capability Index, is a statistical measure that shows how well a process is performing relative to its specification limits, or how well a process meets customer specifications. Developed in the 1980s, it considers both the spread of a process's outputs and how centered it is within the acceptable range. A higher Cpk indicates a more capable process with fewer defects. Values below 1 suggest frequent production of out-of-specification items, while those above 1.33 signal a highly capable process. Learn more about Cpk at [Six Sigma Study Guide](sixsigmastudyguide.com).
+In the world of quality control and process improvement, Cp, Cpk, Pp, and Ppk are essential metrics used to assess process capability and performance. These statistical tools help businesses understand how well their processes are meeting customer requirements.
 
-- **Cp** measures the process potential by comparing the spread of the process to the specification limits.
-- **Cpk** measures the process performance by considering both the process spread and its centering relative to the specification limits.
+CpK, or the Process Capability Index, is a statistical measure that shows how well a process is performing relative to its specification limits, or how well a process meets customer specifications. Developed in the 1980s, it considers both the spread of a process's outputs and how centered it is within the acceptable range. A higher Cpk indicates a more capable process with fewer defects. Values below 1 suggest frequent production of out-of-specification items, while those above 1.33 signal a highly capable process. 
 
-#### Formula for CpK
+PpK, aka Process Performance Index, measures how much a process varies overall and how well it can consistently match the requirements for a given good or service. To ascertain process capacity, the spread of the process distribution is compared to the specification limitations.
+ 
+* **Cp** and **Cpk** measure *process capability*. They compare the process's natural variation to the specification limits.
+    * **Cp** indicates the potential capability of a process, assuming the process is centered.
+    * **Cpk** considers both process variation and centering, providing a more realistic picture of process performance.
 
-The formula for CpK is:
+* **Pp** and **Ppk** measure *process performance* over a specific period.
+    * **Pp** indicates the actual performance of a process without considering centering.
+    * **Ppk** considers both actual performance and process centering.
 
-$$Cpk = \min \left( \frac{3\sigma \text{USL} - \mu}{3\sigma}, \frac{3\sigma \mu - \text{LSL}}{3\sigma} \right)$$
+**How are they used?**
+* **Cp and Cpk** are used to evaluate a process that is in a state of statistical control. They help determine if the process is capable of meeting customer requirements.
+* **Pp and Ppk** are used to assess the overall performance of a process, regardless of its state of control. They are often used to analyze historical data or when initial process data is being collected.
 
+**Key Differences**
+While Cpk only measures process centering relative to specifications, PpK measures both centering and variation. Key differences are:
+* **Cp and Pp** focus on process variation, while **Cpk and Ppk** consider both variation and centering.
+* **Cp and Cpk** are used for processes in statistical control, while **Pp and Ppk** can be used for any process.
+* Cpk assumes overall process variability is constant while PpK does not
 
-where:
+**In summary**, 
+* Cpk is the potential of a process to meet a specification (short term) while Ppk is how the process actually did (long term). Another way to look at the difference is that **Cpk is used for a subgroup of data, while Ppk is used for the whole process**.
+
+* Cp, Cpk, Pp, and Ppk are valuable tools for understanding and improving process performance. By using these metrics, businesses can identify areas for improvement, reduce defects, and increase customer satisfaction. Learn more about Cpk and PpK at [Six Sigma Study Guide](sixsigmastudyguide.com).
+
+### Formulas for Cp, Cpk, Pp, and Ppk
+
+In order to implement these indicators in python, we need to know how are they calculated. Before we dive into the formulas, let's difine some key terms:
 - $\text{USL}$ is the upper specification limit.
 - $\text{LSL}$ is the lower specification limit.
 - $\mu$ is the process mean.
 - $\sigma$ is the process standard deviation.
 
-A higher CpK value indicates a more capable process. **Values below 1 suggest frequent production of out-of-specification items, while those above 1.33 signal a highly capable process.**
 
-#### What is Six Sigma?
+#### Process Capability Indices (Cp and Cpk)
+* **Cp** (Process Capability Index): Measures the potential capability of a process, assuming the process is centered.
+  
+   $$Cp = \frac{\text{USL} - \text{LSL}}{6\sigma}$$
+
+* **Cpk** (Process Capability Index): Considers both process variation and centering.
+  
+   $$Cpk = \min \left( \frac{\text{USL} - \mu}{3\sigma}, \frac{\mu - \text{LSL}}{3\sigma} \right)$$
+
+
+#### Process Performance Indices (Pp and Ppk)
+* **Pp** (Process Performance Index): Measures the actual performance of a process without considering centering.
+   
+   $$Pp = \frac{\text{USL} - \text{LSL}}{6\sigma*}$$
+
+where σ* is the sample standard deviation.
+* **Ppk** (Process Performance Index): Considers both actual performance and process centering.
+   
+   $$Ppk = \min \left( \frac{\text{USL} - \mu}{3\sigma*}, \frac{\mu - \text{LSL}}{3\sigma*} \right)$$
+where σ* is the sample standard deviation.
+
+
+**Note:** The choice between using the population standard deviation (σ) or the sample standard deviation (σ*) depends on the available data and the specific application.
+
+You might notice that the formulas for CpK and PpK are almost the same. The only difference lies in the denominator for the Upper and Lower statistics: Cpk is calculated using the WITHIN standard deviation, while Ppk uses the OVERALL standard deviation. Without boring you with the details surrounding the formulas for the standard deviations, think of the within standard deviation as the average of the subgroup standard deviations, while the overall standard deviation represents the variation of all the data. 
+
+### Interpreting Cpk and Ppk Values
+
+In short, it is well known that a higher CpK or PpK values indicates a more capable process. **Values below 1 suggest frequent production of out-of-specification items, while those above 1.33 signal a highly capable process.** But let's understand the general scale:
+
+* **Cpk and Ppk values are < 1.0:** The process is not capable of meeting the specifications consistently. There's a high probability of producing defective items.
+* **Cpk and Ppk values are 1.33 < > 1.0:** The process is capable of meeting the specifications, but it's operating at a borderline level. Improvements are often necessary.
+* **Cpk and Ppk values are 1.67 < > 1.33:** The process is moderately capable, but there's still room for improvement.
+* **Cpk and Ppk values are > 1.67:** The process is highly capable and consistently meets specifications.
+
+#### Comparing Cpk and Ppk
+* **Cpk** reflects the process's potential capability assuming the process is centered.
+* **Ppk** reflects the actual process performance, considering both variation and centering.
+
+Therefore:
+* **If Cpk is significantly higher than Ppk:** The process is capable but not centered. Focusing on process centering can improve performance.
+* **If Cpk is similar to Ppk:** The process is relatively stable and centered. Further improvements might require reducing process variation.
+* **If Ppk is significantly higher than Cpk:** This might indicate a short-term improvement or an outlier in the data. Further investigation is needed.
+
+**Additional Considerations**
+* **Combining Cpk and Pp:** Analyzing both values can provide insights into process stability and potential. A high Cp and low Cpk indicate a capable process that's not centered.
+* **Long-term vs. Short-term Performance:** Ppk is often used for short-term analysis, while Cpk is more suitable for long-term assessment.
+* **Process Stability:** Cpk assumes the process is in statistical control. If the process is unstable, Cpk might be misleading.
+
+### Visual Representation
+A visual representation can often be more intuitive than just numbers. Control charts, histograms, and capability histograms can provide valuable insights into process behavior and performance.
+
+**Remember:** While numerical values provide a quantitative measure, it's essential to combine them with visual analysis and process knowledge for a comprehensive understanding.
+
+
+## 3. What is Six Sigma?
 
 Six Sigma is a data-driven quality improvement methodology that strives for near perfection. Developed by Motorola in the 1980s, it focuses on minimizing defects and variation in any process. It uses a set of statistical tools like Cpk to identify and eliminate the root causes of errors. **A Six Sigma process aims for only 3.4 defects per million opportunities (DPMO), signifying exceptional quality.** Six Sigma certifications demonstrate expertise in this methodology. You can find more details on Six Sigma principles at [Six Sigma.us](sixsigma.us). 
 
@@ -63,7 +143,11 @@ So, while a 4 sigma process has a defect rate roughly 27 times higher than a 5 s
 - **Customer Satisfaction**: Enhances customer satisfaction by consistently meeting or exceeding expectations.
 
 
-#### Key Features of the `manufacturing` Package
+## 4. `manufacturing` Python Package
+
+Now that we understand key concepts of quality control in manufacturing, let's take a look at the Python `manufacturing` Package
+
+### Key Features
 
 This nifty package brings the power of Six Sigma to your fingertips.  Need to calculate a key metric like Cpk? The manufacturing package has you covered. Cpk helps you assess how well your process meets customer specifications, ensuring you're producing high-quality goods.
 
