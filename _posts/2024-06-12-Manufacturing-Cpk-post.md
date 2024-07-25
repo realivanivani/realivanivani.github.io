@@ -225,7 +225,7 @@ While the `manufacturing` package is tailored for manufacturing processes, its t
 - **Healthcare**: Hospitals can use these tools to monitor patient recovery times or infection rates.
 - **Software Development**: Development teams can track defect rates and process stability over different software releases.
 
-### Alternatives to the `manufacturing` Python Package
+## 5. Alternatives to the `manufacturing` Python Package
 
 While the `manufacturing` package is a robust tool for statistical process control (SPC) and process capability analysis, several other Python packages offer similar functionalities. Here are a few notable ones:
 
