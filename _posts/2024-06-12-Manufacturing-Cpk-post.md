@@ -35,7 +35,10 @@ In the world of quality control and process improvement, Cp, Cpk, Pp, and Ppk ar
 CpK, or the Process Capability Index, is a statistical measure that shows how well a process is performing relative to its specification limits, or how well a process meets customer specifications. Developed in the 1980s, it considers both the spread of a process's outputs and how centered it is within the acceptable range. A higher Cpk indicates a more capable process with fewer defects. Values below 1 suggest frequent production of out-of-specification items, while those above 1.33 signal a highly capable process. 
 
 PpK, aka Process Performance Index, measures how much a process varies overall and how well it can consistently match the requirements for a given good or service. To ascertain process capacity, the spread of the process distribution is compared to the specification limitations.
- 
+
+![image](https://github.com/user-attachments/assets/a32f5d39-41fb-4557-94e0-1b0b7f7afc45)
+*Fig1. **Cp** and **Cpk** for a case of archer's aiming*
+
 * **Cp** and **Cpk** measure *process capability*. They compare the process's natural variation to the specification limits.
     * **Cp** indicates the potential capability of a process, assuming the process is centered.
     * **Cpk** considers both process variation and centering, providing a more realistic picture of process performance.
@@ -45,6 +48,7 @@ PpK, aka Process Performance Index, measures how much a process varies overall a
     * **Ppk** considers both actual performance and process centering.
 
 ![image](https://github.com/user-attachments/assets/cc4a9514-7de8-4cce-a460-ec1302da6d12)
+*Fig2. **Cp** and **Cpk** for a case of driver's aiming. Pp and Ppk are similar, just in that case cars would be different variants of products*
 
 **How are they used?**
 * **Cp and Cpk** are used to evaluate a process that is in a state of statistical control. They help determine if the process is capable of meeting customer requirements.
