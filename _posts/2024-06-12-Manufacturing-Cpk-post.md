@@ -36,9 +36,9 @@ CpK, or the Process Capability Index, is a statistical measure that shows how we
 
 PpK, aka Process Performance Index, measures how much a process varies overall and how well it can consistently match the requirements for a given good or service. To ascertain process capacity, the spread of the process distribution is compared to the specification limitations.
 
-![image](https://github.com/user-attachments/assets/a32f5d39-41fb-4557-94e0-1b0b7f7afc45)
+![image](https://github.com/user-attachments/assets/0f5c1210-a962-4a60-b28b-28ee02b14a6c)
 
-*Fig1. **Cp** and **Cpk** for a case of archer's aiming. Cp is equivalent to Precision, while Cpk is similar to Accuracy or centering*
+*Fig1. Illustrative example of what **Cp** and **Cpk** would represent as function of aiming. Cp is equivalent to Precision, thus narrow spread would produce high values of Cp, while Cpk is function of both Precision and Accuracy, meaning that high value sof Cpk represent a low spread and high centering of the distribution*
 
 **How are they used?**
 * **Cp and Cpk** are used to evaluate a process that is in a state of statistical control. They help determine if the process is capable of meeting customer requirements.
