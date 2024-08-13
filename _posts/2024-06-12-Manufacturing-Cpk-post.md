@@ -40,15 +40,6 @@ PpK, aka Process Performance Index, measures how much a process varies overall a
 
 *Fig1. **Cp** and **Cpk** for a case of archer's aiming. Cp is equivalent to Precision, while Cpk is similar to Accuracy or centering*
 
-* **Cp** and **Cpk** measure *process capability*. They compare the process's natural variation to the specification limits.
-    * **Cp** indicates the potential capability of a process, assuming the process is centered.
-    * **Cpk** considers both process variation and centering, providing a more realistic picture of process performance.
-
-* **Pp** and **Ppk** measure *process performance* over a specific period.
-    * **Pp** indicates the actual performance of a process without considering centering.
-    * **Ppk** considers both actual performance and process centering.
-
-
 **How are they used?**
 * **Cp and Cpk** are used to evaluate a process that is in a state of statistical control. They help determine if the process is capable of meeting customer requirements.
 * **Pp and Ppk** are used to assess the overall performance of a process, regardless of its state of control. They are often used to analyze historical data or when initial process data is being collected.
@@ -64,10 +55,6 @@ While Cpk only measures process centering relative to specifications, PpK measur
 
 * Cp, Cpk, Pp, and Ppk are valuable tools for understanding and improving process performance. By using these metrics, businesses can identify areas for improvement, reduce defects, and increase customer satisfaction. Learn more about Cpk and PpK at [Six Sigma Study Guide](sixsigmastudyguide.com).
 
-
-![image](https://github.com/user-attachments/assets/cc4a9514-7de8-4cce-a460-ec1302da6d12)
-
-*Fig2. **Cp** and **Cpk** for a case of driver's aiming. Pp and Ppk are similar, just in that case cars would be different variants of products*
 ### 2.1 Formulas for Cp, Cpk, Pp, and Ppk
 
 In order to implement these indicators in python, we need to know how are they calculated. Before we dive into the formulas, let's difine some key terms:
@@ -124,6 +111,11 @@ In short, it is well known that a higher CpK or PpK values indicates a more capa
 * **Combining Cpk and Pp:** Analyzing both values can provide insights into process stability and potential. A high Cp and low Cpk indicate a capable process that's not centered.
 * **Long-term vs. Short-term Performance:** Ppk is often used for short-term analysis, while Cpk is more suitable for long-term assessment.
 * **Process Stability:** Cpk assumes the process is in statistical control. If the process is unstable, Cpk might be misleading.
+
+
+![image](https://github.com/user-attachments/assets/cc4a9514-7de8-4cce-a460-ec1302da6d12)
+
+*Fig2. **Cp** and **Cpk** for a case of driver's aiming. Pp and Ppk are similar, just in that case cars would be different variants of products*
 
 ### Visual Representation
 A visual representation can often be more intuitive than just numbers. Control charts, histograms, and capability histograms can provide valuable insights into process behavior and performance. That is the added value 
