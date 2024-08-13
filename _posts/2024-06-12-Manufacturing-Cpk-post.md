@@ -115,7 +115,7 @@ In short, it is well known that a higher CpK or PpK values indicates a more capa
 
 ![image](https://github.com/user-attachments/assets/cc4a9514-7de8-4cce-a460-ec1302da6d12)
 
-*Fig2. **Cp** and **Cpk** for a case of driver's aiming. Pp and Ppk are similar, just in that case cars would be different variants of products*
+*Fig2. **Cp** and **Cpk** for a case of driver's aiming. This illustration could represent **Pp** and **Ppk** too, just in that case cars would be of different variants*
 
 ### Visual Representation
 A visual representation can often be more intuitive than just numbers. Control charts, histograms, and capability histograms can provide valuable insights into process behavior and performance. That is the added value 
