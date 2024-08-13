@@ -44,6 +44,8 @@ PpK, aka Process Performance Index, measures how much a process varies overall a
     * **Pp** indicates the actual performance of a process without considering centering.
     * **Ppk** considers both actual performance and process centering.
 
+![image](https://github.com/user-attachments/assets/cc4a9514-7de8-4cce-a460-ec1302da6d12)
+
 **How are they used?**
 * **Cp and Cpk** are used to evaluate a process that is in a state of statistical control. They help determine if the process is capable of meeting customer requirements.
 * **Pp and Ppk** are used to assess the overall performance of a process, regardless of its state of control. They are often used to analyze historical data or when initial process data is being collected.
