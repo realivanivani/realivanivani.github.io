@@ -37,7 +37,8 @@ CpK, or the Process Capability Index, is a statistical measure that shows how we
 PpK, aka Process Performance Index, measures how much a process varies overall and how well it can consistently match the requirements for a given good or service. To ascertain process capacity, the spread of the process distribution is compared to the specification limitations.
 
 ![image](https://github.com/user-attachments/assets/a32f5d39-41fb-4557-94e0-1b0b7f7afc45)
-*Fig1. **Cp** and **Cpk** for a case of archer's aiming*
+
+*Fig1. **Cp** and **Cpk** for a case of archer's aiming. Cp is equivalent to Precision, while Cpk is similar to Accuracy or centering*
 
 * **Cp** and **Cpk** measure *process capability*. They compare the process's natural variation to the specification limits.
     * **Cp** indicates the potential capability of a process, assuming the process is centered.
@@ -47,8 +48,6 @@ PpK, aka Process Performance Index, measures how much a process varies overall a
     * **Pp** indicates the actual performance of a process without considering centering.
     * **Ppk** considers both actual performance and process centering.
 
-![image](https://github.com/user-attachments/assets/cc4a9514-7de8-4cce-a460-ec1302da6d12)
-*Fig2. **Cp** and **Cpk** for a case of driver's aiming. Pp and Ppk are similar, just in that case cars would be different variants of products*
 
 **How are they used?**
 * **Cp and Cpk** are used to evaluate a process that is in a state of statistical control. They help determine if the process is capable of meeting customer requirements.
@@ -65,6 +64,10 @@ While Cpk only measures process centering relative to specifications, PpK measur
 
 * Cp, Cpk, Pp, and Ppk are valuable tools for understanding and improving process performance. By using these metrics, businesses can identify areas for improvement, reduce defects, and increase customer satisfaction. Learn more about Cpk and PpK at [Six Sigma Study Guide](sixsigmastudyguide.com).
 
+
+![image](https://github.com/user-attachments/assets/cc4a9514-7de8-4cce-a460-ec1302da6d12)
+
+*Fig2. **Cp** and **Cpk** for a case of driver's aiming. Pp and Ppk are similar, just in that case cars would be different variants of products*
 ### 2.1 Formulas for Cp, Cpk, Pp, and Ppk
 
 In order to implement these indicators in python, we need to know how are they calculated. Before we dive into the formulas, let's difine some key terms:
