@@ -1,6 +1,6 @@
 ---
-title: 'First Principles Thinking'
-date: 2024-02-29
+title: 'Crafting a Standout Data Analyst Portfolio'
+date: 2024-11-25
 permalink: /posts/2024/11/Standout-DA-portfolio/
 tags:
   - Data Analysis
