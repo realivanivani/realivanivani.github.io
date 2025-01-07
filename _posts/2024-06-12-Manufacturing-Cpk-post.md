@@ -18,6 +18,10 @@ Have you ever heard of Six Sigma? It's a methodology for achieving near-perfect 
 
 In this blog post, I will cover some of the key concepts of quality control in a large scale manufacturing, as well as, tools and Python packages for analyzing it.
 
+## 0. Notebook
+
+For practical implementation of the principles below, please take look at the notebook that I created here: https://github.com/realivanivani/blog-posts/blob/main/Manufacturing_Py.ipynb
+
 ## 1. Intro
 
 The modern factory floor generates a deluge of data, from sensor readings to production logs.  Python offers a robust ecosystem of libraries to harness this data for improved efficiency and quality control. Analyzing process data allows for the identification of trends, anomalies, and potential quality issues, enabling proactive quality control measures.  Furthermore, production data analysis reveals bottlenecks, allowing for optimized scheduling and maximized efficiency. These libraries, akin to specialized software modules, empower sophisticated data manipulation and analysis.
@@ -261,6 +265,11 @@ The `manufacturing` Python package is a versatile and user-friendly tool that si
 Several Python packages can help you with SPC and process capability analysis, each with its own strengths and weaknesses.
 
 For more information and detailed documentation of the `manufacturing` Python, you can visit the [official PyPI page](https://pypi.org/project/manufacturing/).
+
+## Final note
+
+For practical implementation everything mentioned here, please take look at the notebook that I created here: https://github.com/realivanivani/blog-posts/blob/main/Manufacturing_Py.ipynb
+
 
 For further reading and practical examples, you can explore the documentation and resources provided by each package. Here are some links to get you started:
 - [SciPy Documentation](https://docs.scipy.org/doc/scipy/)
