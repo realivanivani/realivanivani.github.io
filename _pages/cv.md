@@ -10,31 +10,30 @@ I am a Data Scientist with a strong scientific background in bioinformatics and 
 
 Education
 ======
-* Ph.D in Bioinformatics and Biomedicine, University of Barcelona, 2016
+* Ph.D in Bioinformatics and Structural Biology, University of Barcelona, 2016
 * M.S. in Biophysics, Charles University in Prague, 2010
 * B.S. in Physics, Charles University in Prague, 2008
 
 Work experience
 ======
-* Continental UX: Senior Data Analyst
+* Continental Automotive: **Senior Data Scientist**
   Oct 2023-
   * Established and maintained an efficient data management system for optical experiments and production data, supporting R&D teams globally.
   * Specialized in preparing graphs and processing diverse datasets from optical experiments and production End-of-Line (EOL) plants.
   * Created interactive dashboards using Python and PowerBI to facilitate seamless collaboration and informed decision-making.
   * Contributed to the team’s expansion and development of Data Science infrastructure and streamlined data processes.
 
-* International Committee of the Red Cross: Data Analytics Lead
+* International Committee of the Red Cross: **Data Analytics Lead**
   Jun 2018 - Sep 2023
-  * Handled highly sensitive personal data, ensuring secure and ethical management.
-  * Prepared intricate reports and infographics for strategic decision-making.
   * Led small teams, fostering collaboration and efficient data handling, and trained colleagues in complex SQL and Python data processes.
   * Acted as a Project Manager for the Jerusalem Delegation, steering the Family Visit Program through feasibility and planning phases.
-  * Created an automated dashboard for the Syrian delegation that integrates external information sources into the ICRC PCP framework, mapping events and providing statistical feedback.
-  * Developed a dashboard at HQ visualizing ETD request flows over time and country, aiding in strategic planning.
-  * Supported delegates and operations with reports and analyses, enhancing data-driven decision-making.
   * Evaluated and improved the quality of Prot6 databases and infrastructure.
+  * Handled highly sensitive personal data, ensuring secure and ethical management.
+  * Prepared intricate reports and infographics for strategic decision-making.
+  * Created an automated dashboard for the Syrian delegation that integrates external information sources into the ICRC PCP framework, mapping events and providing statistical feedback.
+  * Supported delegates and operations with reports and analyses, enhancing data-driven decision-making.
 
-* Institute for Research in Biomedicine: Research Scientist
+* Institute for Research in Biomedicine: **Research Scientist**
   Jan 2010 - Jun 2017
   * Conducted molecular dynamics simulations of DNA and protein molecules, optimizing software tools like AMBER and Gromacs.
   * Applied advanced statistical methods to interpret biological data from experiments and simulations.
@@ -48,7 +47,7 @@ Skills
 
 Publications
 ======
-List of all my publications: https://scholar.google.com/citations?user=GqCZ-0QAAAAJ&hl=en
+List of all my publications: **https://scholar.google.com/citations?user=GqCZ-0QAAAAJ&hl=en**
 
 Awards
 ======
