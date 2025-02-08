@@ -8,9 +8,8 @@ tags:
   - Portfolio
   - Projects
 ---
-# **Mastering the Art of Data Cleaning: A Comprehensive Guide**
 
-When people think about data analysis, they often imagine building predictive models or creating dazzling visualizations. But beneath the surface of every successful data project lies an essential yet often underestimated step: **data cleaning**. This critical process lays the foundation for trustworthy insights, making it one of the most valuable skills for any data professional.  
+As data analyst, people often ask me where do I spend most of my work time, besides scrolling through the internet. When people think about data analysis, they often imagine building predictive models or creating dazzling visualizations. But beneath the surface of every successful data project lies an essential yet often underestimated step: **data cleaning**. This critical process lays the foundation for trustworthy insights, making it one of the most valuable skills for any data professional.  
 
 In this guide, we’ll explore the “what,” “why,” and “how” of data cleaning, offering a step-by-step framework and practical examples to help you master this art.
 
