@@ -1,7 +1,7 @@
 ---
 title: 'Mastering the Art of Data Cleaning'
-date: 2024-10-08
-permalink: /posts/2024/11/Art-of-Data-Cleaning/
+date: 2024-05-15
+permalink: /posts/2024/05/Art-of-Data-Cleaning/
 tags:
   - Data Analysis
   - Data Cleaning
