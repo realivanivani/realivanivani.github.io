@@ -15,7 +15,7 @@ I've been working in Automotive manufacturing for more then a year now and there
 
 In this blog post, I will cover some of the key concepts of quality control in a large scale manufacturing, as well as, tools and Python packages for analyzing it.
   
-  ![production analysis](/images/production_analysis.png)
+  ![production analysis](/images/production_analysis.jpeg)
 
 ## 0. Notebook
 
