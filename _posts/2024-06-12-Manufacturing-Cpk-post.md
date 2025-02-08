@@ -11,10 +11,7 @@ tags:
   - Six Sigma
 ---
 
-Ways to analyze the `manufacturing` and quality controls using Python
-=======
-
-Have you ever heard of Six Sigma? It's a methodology for achieving near-perfect quality in manufacturing. But what if you could leverage Six Sigma tools right from your Python environment? That's where the manufacturing package comes in!
+I've been working in Automotive manufacturing for more then a year now and there is one concept that is holy grail in this industry, and that is **Six Sigma**. It's a methodology for achieving near-perfect quality in manufacturing. But how can you could leverage Six Sigma tools right from your Python environment? That's where the manufacturing package comes in.
 
 In this blog post, I will cover some of the key concepts of quality control in a large scale manufacturing, as well as, tools and Python packages for analyzing it.
 
