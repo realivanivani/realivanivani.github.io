@@ -8,9 +8,9 @@ tags:
   - Portfolio
   - Data
 ---
-# Crafting a Standout Data Analyst Portfolio: A Step-by-Step Guide
-
 A well-constructed portfolio is your golden ticket to showcasing your data analysis skills and landing your dream job. It serves as a window into your expertise, showing potential employers not just what you’ve done but how you think, solve problems, and communicate results. Let’s break down the essential elements of a standout data analyst portfolio and explore how to build one that truly stands out.
+
+  ![DS portfolio](/images/portfolio.jpeg)
 
 ---
 
