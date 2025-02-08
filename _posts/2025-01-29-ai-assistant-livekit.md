@@ -1,5 +1,5 @@
 ---
-title: 'An easy to implement AI voice and video assistant with Livekit'
+title: 'An easy to implement AI Voice and Video Agents with Livekit: A Straightforward Approach'
 date: 2025-01-29
 permalink: /posts/2025/01/blog-post-7/
 tags:
@@ -8,8 +8,6 @@ tags:
   - voice assistant
   - LLM
 ---
-
-## Implementing AI Voice and Video Agents with Livekit: A Straightforward Approach ##
 
 In this blog post, we will discuss the implementation of AI-powered voice and video agents using the Livekit platform.  Our experience demonstrates that setting up these agents is a straightforward process, especially with the comprehensive documentation and tutorials available on the Livekit website. We have successfully implemented two versions of these agents: one focused solely on voice interaction and another that incorporates both voice and visual assistance.
 
