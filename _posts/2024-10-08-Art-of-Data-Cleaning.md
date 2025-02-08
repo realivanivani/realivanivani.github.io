@@ -13,6 +13,7 @@ As data analyst, people often ask me where do I spend most of my work time, besi
 
 In this guide, we’ll explore the “what,” “why,” and “how” of data cleaning, offering a step-by-step framework and practical examples to help you master this art.
 
+  ![DataCleaning](/images/data_cleaning.jpeg)
 ---
 
 ## **Why Data Cleaning Matters**
