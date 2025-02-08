@@ -11,8 +11,7 @@ I am a Data Scientist with a strong scientific background in bioinformatics and 
 Education
 ======
 * Ph.D in Bioinformatics and Structural Biology, University of Barcelona, 2016
-* M.S. in Biophysics, Charles University in Prague, 2010
-* B.S. in Physics, Charles University in Prague, 2008
+* M.S. in Physics, Charles University in Prague, 2010
 
 Work experience
 ======
