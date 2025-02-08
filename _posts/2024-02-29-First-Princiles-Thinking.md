@@ -1,5 +1,5 @@
 ---
-title: 'First Principles Thinking'
+title: 'First Principles Thinking in everyday life'
 date: 2024-02-29
 permalink: /posts/2024/02/blog-post-1/
 tags:
@@ -8,9 +8,6 @@ tags:
   - programming
   - business
 ---
-
-# First Principles Thinking in everyday life
-
 Hey there! 
 
 Welcome to my first-ever blog post! Now, I know this blog isn't only about data science and coding; we're going to dive into everyday stuff too. So, for starters, I wanted to chat about something that's not as dry as coding (I mean, I love it, but let's shake things up a bit, shall we?). Ever heard of first principles thinking? It's this cool concept that often pops up on YouTube, especially thanks to Elon Musk's buzz. But hey, if you're not familiar with it, don't sweat it. Let me break it down for you.
