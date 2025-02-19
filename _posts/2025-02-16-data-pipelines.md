@@ -1,3 +1,15 @@
+---
+title: 'Data Pipelines'
+date: 2025-02-16
+permalink: /posts/2025/02/blog-post-1/
+tags:
+  - Data Pipeline
+  - collect
+  - ingest
+  - process
+  - compute
+---
+
 Data is everywhere, like a river flowing into a city.  But raw data, like river water, isn't always ready to use.  We need to clean it, process it, and get it where it needs to go so it can be helpful. That's why **data pipelines** are important.
 
 Think of a data pipeline as a set of steps to get data from point A to point B, and make it useful along the way.  It's like a recipe for data, taking raw ingredients and turning them into a delicious meal of insights.  Companies use data pipelines to understand their customers, make better decisions, and build smarter products.
