@@ -1,5 +1,5 @@
 ---
-title: 'Data Pipelines'
+title: 'Data Pipelines basics - the backbone of data apps'
 date: 2025-02-16
 permalink: /posts/2025/02/blog-post-1/
 tags:
