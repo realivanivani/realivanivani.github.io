@@ -3,10 +3,10 @@ title: '5 Essential SQL Techniques for Data Scientists & Analysts'
 date: 2025-02-26
 permalink: /posts/2025/02/blog-post-2/
 tags:
-  - first principles
-  - problem solving
-  - programming
-  - business
+  - sql
+  - queries
+  - essential
+  - data structures
 ---
 
 **SQL - The most tool for Data Scientist and Analysts**
