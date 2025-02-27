@@ -12,6 +12,12 @@ tags:
 ---
 For data scientists and analysts, basic SQL queries are just the starting point. To truly unlock the power of databases and perform complex analyses, you need to delve into advanced constructs. This blog post explores five essential techniques: Subqueries, Common Table Expressions (CTEs), Views, Temporary Tables, and Create Table As Select (CTAS). These tools enable you to write more efficient, readable, and powerful SQL code.
 
+**Database Structure and Collaborative Usage**
+
+In a collaborative environment, a well-structured database is crucial. Typically, databases are organized into tables, with each table representing a specific entity (e.g., customers, products, orders). Different members might have varying levels of access and usage patterns. Data analysts and scientists primarily use SQL to query and extract data for analysis, focusing on `SELECT`, `FROM`, `WHERE`, `GROUP BY`, `ORDER BY`, and `JOIN` operations. Database administrators manage the database structure, user permissions, and overall performance, using commands like `CREATE`, `ALTER`, and `GRANT`. Developers might interact with the database through applications, using SQL to insert, update, and delete data (`INSERT`, `UPDATE`, `DELETE`). A clear understanding of the database schema and access privileges ensures efficient collaboration and data integrity. Solution for this complexity are advanced SQL techniques.
+
+![database strcture with sql](https://github.com/user-attachments/assets/49e600e5-9c94-4ab5-a4a7-1542bd51ff8c)
+
 **Why These Techniques?**
 
 * **Subqueries:** Allow you to nest queries within queries for dynamic data retrieval.
