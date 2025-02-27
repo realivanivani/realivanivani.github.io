@@ -11,7 +11,7 @@ tags:
 
 In the world of data analysis, SQL (Structured Query Language) is the fundamental rock. It's the language that allows you to communicate with databases, extracting, manipulating, and analyzing data with precision. Whether you're a seasoned analyst or just starting your journey, a solid grasp of SQL is essential for uncovering meaningful patterns and driving data-informed decisions. This blog post will cover the fundamental concepts of SQL, basic query structures, and the software tools that empower data analysts. But first let's answer what is a database and what are two main categories of databases.
 
-**2 databases types**
+**Two database types**
 
 A database is a collection of structured and related data organized in a way that data can be easily accessed and managed. In short, the database is one way to store data. You deal with databases every day, for example, your photos are stored in your smartphone’s gallery, this gallery is a database. There are many different types of databases such as relational databases, distributed databases, cloud databases, data warehouses, but all of them fall into 2 categories, **relational (SQL)** and **non-relational (NoSQL)** databases:
 
