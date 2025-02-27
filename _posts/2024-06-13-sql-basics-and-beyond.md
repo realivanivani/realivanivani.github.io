@@ -9,7 +9,23 @@ tags:
   - data analytics
 ---
 
-In the world of data analysis, SQL (Structured Query Language) is the fundamental rock. It's the language that allows you to communicate with databases, extracting, manipulating, and analyzing data with precision. Whether you're a seasoned analyst or just starting your journey, a solid grasp of SQL is essential for uncovering meaningful patterns and driving data-informed decisions. This blog post will cover the fundamental concepts of SQL, basic query structures, and the software tools that empower data analysts.
+In the world of data analysis, SQL (Structured Query Language) is the fundamental rock. It's the language that allows you to communicate with databases, extracting, manipulating, and analyzing data with precision. Whether you're a seasoned analyst or just starting your journey, a solid grasp of SQL is essential for uncovering meaningful patterns and driving data-informed decisions. This blog post will cover the fundamental concepts of SQL, basic query structures, and the software tools that empower data analysts. But first let's answer what is a database and what are two main categories of databases.
+
+**2 types of databases**
+
+A database is a collection of structured and related data organized in a way that data can be easily accessed and managed. In short, the database is one way to store data. You deal with databases every day, for example, your photos are stored in your smartphone’s gallery, this gallery is a database. There are many different types of databases such as relational databases, distributed databases, cloud databases, data warehouses, but all of them fall into 2 categories, **relational (SQL)** and **non-relational (NoSQL)** databases:
+
+![image](https://github.com/user-attachments/assets/4fe8676a-0dc1-4abd-850f-245c62433121)
+
+**Relational (SQL) Database**
+A Relational (SQL) Database consists of different tables like customers, orders, products..etc which are related to each other and have a fixed schema. If your data is very structured, easy to understand, highly organized, SQL is a great choice.
+
+**Non-Relational (NoSQL) Database**
+NoSQL Database stands for Not Only SQL or Not SQL refers to high-performance, and non-relational data stores but it comes at the price of lower flexibility and high complexity when querying the data. A non-relational (NoSQL) database is ideal for projects facing changing data requirements. If you are facing changing data requirements, you have to store different types of data such as unstructured data, or your data hard to understand,  NoSQL may be your best bet.
+
+**SQL language**
+
+SQL stands for Structured Query Language and by definition is a query language used for storing, retrieving, managing, or manipulating the data inside databases. In short, SQL is the language you use to talk to databases. You might hear on the Internet about the neverending battles about how SQL should be pronounced. Many English-speaking database professionals are for **Sequal**, others are for **S-Q-L**. I pronounce it both ways, depending on the level of the person that I am speaking to.
 
 Why is SQL so vital? Because it enables us to:
 
@@ -40,13 +56,7 @@ Data analysts have a wide range of software options for working with SQL:
     * **Snowflake:** A cloud-based data warehousing platform.
 * **Data Analysis Platforms:**
     * Many data analysis platforms like Tableau, Power BI, and Python (with libraries like pandas and SQLAlchemy) also offer SQL connectivity for data retrieval.
-
-**Database Structure and Collaborative Usage**
-
-In a collaborative environment, a well-structured database is crucial. Typically, databases are organized into tables, with each table representing a specific entity (e.g., customers, products, orders). Different members might have varying levels of access and usage patterns. Data analysts and scientists primarily use SQL to query and extract data for analysis, focusing on `SELECT`, `FROM`, `WHERE`, `GROUP BY`, `ORDER BY`, and `JOIN` operations. Database administrators manage the database structure, user permissions, and overall performance, using commands like `CREATE`, `ALTER`, and `GRANT`. Developers might interact with the database through applications, using SQL to insert, update, and delete data (`INSERT`, `UPDATE`, `DELETE`). A clear understanding of the database schema and access privileges ensures efficient collaboration and data integrity.
-
-![database strcture with sql](https://github.com/user-attachments/assets/49e600e5-9c94-4ab5-a4a7-1542bd51ff8c)
-
+      
 The Basics: SQL Queries and Commands
 ------
 SQL is a standardized programming language designed for managing and manipulating relational databases. These databases organize data into tables, with rows representing individual records and columns representing attributes
