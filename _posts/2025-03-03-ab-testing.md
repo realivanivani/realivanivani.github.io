@@ -66,7 +66,7 @@ Here’s a refined version of your blog section with improved clarity, flow, and
 
 Think of A/B testing as a coin flip—you’re randomly assigning users to either the control group (A) or the treatment group (B). This ensures fairness, balancing external factors so that any observed differences can be directly attributed to the change being tested.  
 
-### **Why Randomization Is Crucial**  
+#### **Why Randomization Is Crucial**  
 
 Without proper randomization, hidden biases can skew your results. For example, if users self-select into groups, you might end up with early adopters in the treatment group, making a new feature appear more effective than it actually is. Randomization eliminates such biases, making your experiment more reliable.  
 
@@ -96,7 +96,7 @@ Where:
 - **\( \sigma^2 \)** = Population variance of the metric (estimated from historical data or a pilot test)  
 - **\( \Delta \)** = Minimum detectable effect (the smallest meaningful difference you want to detect)  
 
-### **Breaking Down the Formula Components**  
+#### **Breaking Down the Formula Components**  
 
 - **Significance Level (α):** The probability of detecting a difference when none exists (Type I error). A common threshold is 0.05.  
 - **Statistical Power (1-β):** The probability of detecting a true effect if it exists. Typically set at 0.80, meaning an 80% chance of identifying a real difference.  
@@ -131,6 +131,3 @@ A statistically significant change may not always justify action, while a non-si
 
 By balancing both **statistical and practical significance**, you can make data-driven decisions that maximize business impact.  
 
----
-
-This version maintains the technical depth while making the explanation clearer and more engaging. Let me know if you'd like any refinements! 🚀
