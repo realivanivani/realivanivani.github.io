@@ -1,5 +1,5 @@
 ---
-title: 'A/B testing - principles and how to use it'
+title: 'A/B testing - principles and practicalities on how to setup the experiment'
 date: 2025-03-03
 permalink: /posts/2025/03/blog-post-1/
 tags:
