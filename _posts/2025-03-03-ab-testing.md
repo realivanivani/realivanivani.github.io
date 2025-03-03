@@ -25,6 +25,8 @@ Every A/B test revolves around two key groups:
 - **Control Group (A):** This group experiences the existing version of your webpage, app, or feature. It serves as the benchmark for comparison.  
 - **Treatment Group (B):** This group interacts with the modified version, incorporating the change that is hypothesized to improve performance.  
 
+![image](https://github.com/user-attachments/assets/329c438b-2118-4f51-afad-c6d9fd636704)
+
 Imagine a race:  
 
 - The **control group** runs in their current shoes.  
