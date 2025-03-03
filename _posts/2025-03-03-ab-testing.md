@@ -85,10 +85,12 @@ So how do you determine the optimal sample size?
 
 A commonly used formula for calculating sample size is:  
 
+$`
 n = 2 \times \frac{(Z_{\alpha/2} + Z_{\beta})^2 \times \sigma^2}{\Delta^2}
+`$
 
 Where:  
-- **\( n \)** = Sample size per group  
+- **$`n`$** = Sample size per group  
 - **\( Z_{\alpha/2} \)** = Z-score for the desired significance level (e.g., 1.96 for a 95% confidence level, α = 0.05)  
 - **\( Z_{\beta} \)** = Z-score for statistical power (typically 0.84 for 80% power)  
 - **\( \sigma^2 \)** = Population variance of the metric (estimated from historical data or a pilot test)  
