@@ -85,9 +85,7 @@ So how do you determine the optimal sample size?
 
 A commonly used formula for calculating sample size is:  
 
-\[
 n = 2 \times \frac{(Z_{\alpha/2} + Z_{\beta})^2 \times \sigma^2}{\Delta^2}
-\]
 
 Where:  
 - **\( n \)** = Sample size per group  
@@ -131,3 +129,107 @@ A statistically significant change may not always justify action, while a non-si
 
 By balancing both **statistical and practical significance**, you can make data-driven decisions that maximize business impact.  
 
+---
+
+## **Experiment Duration: Finding the Right Timing for Reliable Insights**  
+
+You’ve developed a hypothesis, identified key metrics, randomized your groups, and calculated the required sample size. Now comes a critical question: **How long should your A/B test run?**  
+
+### **Striking the Balance: Not Too Short, Not Too Long**  
+
+An experiment’s duration should be **long enough** to collect sufficient data for statistical significance but **not so long** that you risk losing opportunities or harming business performance.  
+
+- **Ending too early** can lead to misleading conclusions due to insufficient data.  
+- **Running too long** could expose more users to an underperforming variation, leading to lost revenue or engagement.  
+
+### **Key Factors That Influence Experiment Duration**  
+
+Several factors impact how long your A/B test should run:  
+
+#### **1. Traffic Volume**  
+- **High-traffic websites or apps** can reach statistical significance faster, sometimes within days.  
+- **Low-traffic sites** may need weeks or even months to gather enough data.  
+
+#### **2. Confidence Level and Statistical Power**  
+- A **higher confidence level** (e.g., 95% vs. 90%) requires **more data**, increasing test duration.  
+- **Stronger statistical power** ensures a higher chance of detecting real differences but demands larger sample sizes.  
+
+#### **3. Minimum Detectable Effect (MDE)**  
+- The **smaller the effect size** you want to detect, the longer the test must run.  
+- A **1% conversion rate improvement** requires a longer test than detecting a **5% improvement**.  
+
+#### **4. Seasonality and External Factors**  
+- **Holidays, sales events, or major industry changes** can distort results.  
+- If your business has seasonal trends, ensure the test runs during a **stable period** for accurate insights.  
+
+### **Customizing Experiment Duration for Your Needs**  
+
+There’s no universal formula for test duration—it requires balancing **statistical rigor with business priorities**. Use **sample size calculators** and **historical traffic data** to estimate the ideal timeframe while staying mindful of external influences.  
+
+---
+
+## **Designing Effective A/B Tests: Where Science Meets Strategy**  
+
+With a strong foundation in A/B testing principles, let’s explore the **strategic side**—choosing the right test type, identifying impactful changes, and prioritizing experiments for maximum impact.  
+
+### **Types of A/B Tests: Picking the Right Approach**  
+
+Different types of A/B tests serve different purposes. Here are the most common ones:  
+
+#### **1. Simple A/B Tests**  
+- **What it is:** Compares a control version (A) with a single variation (B).  
+- **Best for:** Testing straightforward changes like button colors, headlines, or call-to-action text.  
+
+#### **2. Multivariate Tests (MVT)**  
+- **What it is:** Tests multiple variations of multiple elements simultaneously (e.g., headlines, images, and button colors).  
+- **Best for:** Finding the optimal combination of multiple page elements.  
+- **Challenge:** Requires a **larger sample size** and **complex analysis**.  
+
+#### **3. Bandit Tests**  
+- **What it is:** Uses an adaptive algorithm to **dynamically allocate more traffic** to better-performing variations.  
+- **Best for:** Rapidly optimizing a feature while reducing exposure to underperforming variations.  
+- **Challenge:** Less statistical rigor compared to traditional A/B tests but ideal for real-time optimization.  
+
+### **What to Test: Identifying the Most Impactful Changes**  
+
+A/B testing can be applied across various elements of a product or service. Some high-impact areas include:  
+
+- **Headlines & Copy:** Test different headlines and calls to action to maximize engagement.  
+- **Page Layout & Design:** Experiment with different layouts, colors, and UI elements to improve usability.  
+- **Pricing & Offers:** Optimize pricing models, discounts, or promotions for revenue growth.  
+- **New Product Features:** Validate new features before rolling them out widely.  
+- **Personalization Strategies:** Test content recommendations, tailored user experiences, or targeted messaging.  
+- **Algorithm Performance:** Compare machine learning models, ranking algorithms, or recommendation engines in live environments.  
+
+The key is to **test what matters most**—focus on changes that align with your **business goals and user experience improvements**.  
+
+## **Prioritizing A/B Tests: Making the Most of Your Resources**  
+
+You probably have a long list of potential experiments. But with limited time and resources, **which tests should come first?**  
+
+### **The PIE Framework for Prioritization**  
+
+One popular framework for deciding which tests to run is **PIE**, which scores tests based on three factors:  
+
+1. **Potential:** How much impact could this test have on key metrics?  
+2. **Importance:** How critical is this metric to overall business success?  
+3. **Ease:** How easy is it to implement and analyze this test?  
+
+By assigning scores to each factor, you can **rank your experiments** and focus on the most valuable ones first.  
+
+---
+
+## **Conclusion: Embrace the Experimentation Mindset**  
+
+Congratulations! You now have a **structured, data-driven approach** to A/B testing—from hypothesis formulation to execution and analysis.  
+
+### **Key Takeaways:**  
+✅ Randomization and sample size ensure statistical rigor.  
+✅ Test duration must balance statistical accuracy with business impact.  
+✅ Choosing the right A/B test type depends on your goals and data availability.  
+✅ Prioritizing tests strategically maximizes efficiency and impact.  
+✅ Statistical significance isn’t enough—**practical significance** matters too.  
+
+A/B testing is **not a one-time process**—it’s a continuous cycle of learning, iterating, and improving. By fostering a **culture of experimentation**, you empower your team to make **smarter, data-driven decisions** that drive real business impact.  
+
+**Hopefully this will help you design your owen A/B testing**  
