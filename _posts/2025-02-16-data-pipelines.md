@@ -3,7 +3,8 @@ title: 'Data Pipelines basics - the backbone of data apps'
 date: 2025-02-16
 permalink: /posts/2025/02/blog-post-1/
 tags:
-  - Data Pipeline
+  - data engineering
+  - data pipeline
   - collect
   - ingest
   - process
@@ -16,7 +17,7 @@ Think of a data pipeline as a set of steps to get data from point A to point B, 
 
 Why are data pipelines so important? Because they help us handle the huge amounts of data we create every day.  Without pipelines, data would be messy and hard to use.  With them, we can turn data into valuable information.
 
-This blog post will explore what data pipelines are all about, using the video [What is Data Pipeline? | Why Is It So Popular?](http://www.youtube.com/watch?v=kGT4PcTEPP8) by ByteByteGo as a guide.  The video breaks down data pipelines into five main stages, which we'll look at, along with the tools and technologies used in each stage, and why they are important.
+This blog post will explore what data pipelines are all about, using the video [What is Data Pipeline?](http://www.youtube.com/watch?v=kGT4PcTEPP8) by ByteByteGo as a guide.  The video breaks down data pipelines into five main stages, which we'll look at, along with the tools and technologies used in each stage, and why they are important.
 
 Let's see how data flows through these pipelines and becomes something we can use.
 
