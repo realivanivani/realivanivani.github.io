@@ -11,7 +11,7 @@ tags:
 ---
 In recent years, there has been a surge in research in classical Molecular Dynamics and force-field parameterization using advanced machine learning like Neural Networks. Since this has been the topic of my PhD work, I will try to summirize recent advancing in this field.
 
-![image](https://github.com/user-attachments/assets/07fd0f83-d1dc-4001-ab3c-507b6345f45d)
+![image](https://github.com/user-attachments/assets/1fa232e3-43fa-4252-8f7f-713f67cac2d9)
 
 ## 1. Introduction: The Evolving Landscape of Molecular Dynamics and Force Fields
 Molecular dynamics (MD) simulations stand as a powerful and widely employed computational technique, offering the ability to scrutinize the intricate nature of chemical processes at the atomic level, particularly within the realm of proteins 1. These simulations provide a dynamic view of molecular systems, enabling researchers to investigate phenomena ranging from protein folding and unfolding to drug-ligand interactions and material properties. The accuracy of the insights gleaned from MD simulations is fundamentally contingent upon the quality of the force fields employed 1. Force fields serve as the mathematical representation of the potential energy landscape that governs the interactions between atoms within the simulated system. A precise and reliable force field is therefore paramount for the credibility and utility of MD simulations, as it dictates the forces acting on each atom and consequently the overall behavior of the system.
