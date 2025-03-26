@@ -1,4 +1,3 @@
-```markdown
 # Machine Learning Models for Sepsis Prediction: Research, Development Strategies, and Implementation
 
 ## 1. Introduction to Sepsis and Machine Learning Prediction
