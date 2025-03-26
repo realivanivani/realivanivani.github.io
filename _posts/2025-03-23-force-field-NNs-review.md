@@ -126,4 +126,3 @@ Publications
 38.	Adrian Roitberg | Research | University of Florida, accessed on March 21, 2025, https://scholars.ufl.edu/roitberg/grants
 39.	Fine-tuning molecular mechanics force fields to experimental free energy measurements, accessed on March 21, 2025, https://www.biorxiv.org/content/10.1101/2025.01.06.631610v1.full-text
 40.	Challenges, limitations, and impact of machine learning (ML) in... - ResearchGate, accessed on March 21, 2025, https://www.researchgate.net/figure/Challenges-limitations-and-impact-of-machine-learning-ML-in-molecular-dynamics-MD_fig12_379410038
-![image](https://github.com/user-attachments/assets/6e6588a6-22de-484f-b698-e0fcf39fc9c8)
