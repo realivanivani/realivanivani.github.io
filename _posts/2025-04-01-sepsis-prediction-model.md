@@ -1,8 +1,19 @@
-# Machine Learning Models for Sepsis Prediction: Research, Development Strategies, and Implementation
+---
+title: 'Machine Learning Models for Sepsis Prediction: Research, Development Strategies, and Implementation'
+date: 2025-04-01
+permalink: /posts/2025/04/blog-post-1/
+tags:
+  - machine learning
+  - sepsis
+  - predictions
+  - Overview
+---
 
 ## 1. Introduction to Sepsis and Machine Learning Prediction
 
 Sepsis, a condition recognized as a global health priority by the World Health Assembly, represents a critical medical challenge characterized by the body's dysregulated response to an infection. This overwhelming systemic reaction can lead to widespread tissue damage, organ failure, and ultimately, death [1]. 
+
+![image](https://github.com/user-attachments/assets/84ef9500-64e9-407f-ba18-21bd067012b5)
 
 Key aspects of sepsis:
 - Exists on a spectrum of severity (sepsis to septic shock) [4]
@@ -168,4 +179,4 @@ Key challenges remain in:
 [19] acampillos/sepsis-prediction - GitHub  
 [33] Handling imbalanced medical datasets - ResearchGate  
 [44] Explainable AI in Healthcare - Clearstep Health
-```
+
