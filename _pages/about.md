@@ -18,7 +18,7 @@ I am a Data Scientist and Analyst with a PhD in Bioinformatics and Computational
 
 🧬 My research has explored the fields of Structural Biology, focusing on Molecular Dynamics of DNA and proteins, Quantum Mechanics calculations, drug discovery, force-field parameterization, and experimental validation.
 
-As I'm on a journey to become a serious Data Scientist, I am regularly sharing posts and know-hows on my [blogs and posts](https://realivanivani.github.io/year-archive/) about my projects and discoveries. The final aim? Becoming a true full-stack Data Wizard one day :)
+As I'm on a journey to become a serious Data Scientist, I am regularly sharing posts and know-hows on my [blogs and posts](https://realivanivani.github.io/year-archive/) about my projects and discoveries.
 
 ---
 Here are some of my selected work experiences
