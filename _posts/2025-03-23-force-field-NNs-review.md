@@ -9,7 +9,9 @@ tags:
   - Parameterization
   - Overview
 ---
-In recent years, there has been a surge in research in classical Molecular Dynamics and force-field parameterization using advanced machine learning like Neural Networks. Since this has been the topic of my PhD work, I will try to summirize recent advancing in this field.
+In recent years, there has been a surge in research in classical Molecular Dynamics and force-field parameterization using advanced machine learning like Neural Networks. Since this has been the topic of my PhD work, I wanted to explore the field and try to summirize recent advancing in this field. For this I wanted to test Gemini Research feature. Thus, this post is written by Gemini, and the results are very interesting. 
+
+It obviously favoured some more 'online present' articles and papers, but it definitely explored more things than I could in 20 mins (that's how long it took to process). The writing and formatting is obviously not scientific, but it's very useful for first insights. Let's see
 
 ![image](https://github.com/user-attachments/assets/1fa232e3-43fa-4252-8f7f-713f67cac2d9)
 
