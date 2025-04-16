@@ -6,7 +6,8 @@ redirect_from:
   - /resume
 ---
 
-I am a Data Scientist with a strong scientific background in bioinformatics and drug discovery, and five years of experience in data analytics in an international organization. I also managed small data teams of data managers and analysts. I am looking forward to bringing my international experience, problem-solving mindset, and enthusiasm to a new environment on the edge of data science and biotech.
+I am a data specialist with a decade of experience in machine learning, predictive modeling, and data pipeline optimization. Proven expertise in leading data science teams, building scalable analytical models, and developing AI-driven solutions for manufacturing, bioinformatics, and business analytics. Adept at driving innovation, automating analytical workflows, and providing actionable insights to stakeholders. I’ve led international projects that required rigorous data governance, scripting for automation, and real-time decision-making support. I bring a strong foundation in computational science, cloud data workflows, and a collaborative approach to delivering reliable data infrastructure across research and development settings.
+
 
 Education
 ======
@@ -15,28 +16,27 @@ Education
 
 Work experience
 ======
-* Continental Automotive: **Senior Data Scientist**
+* Continental Automotive: **Data Scientist**
   Oct 2023-
-  * Established and maintained an efficient data management system for optical experiments and production data, supporting R&D teams globally.
-  * Specialized in preparing graphs and processing diverse datasets from optical experiments and production End-of-Line (EOL) plants.
-  * Created interactive dashboards using Python and PowerBI to facilitate seamless collaboration and informed decision-making.
-  * Contributed to the team’s expansion and development of Data Science infrastructure and streamlined data processes.
+  * Developed and maintained data infrastructure for high-frequency optical experiment data and production line (EOL) results, supporting global R&D coordination.
+  * Created automated Python pipelines for data extraction, transformation, and visualization; deployed Power BI dashboards for decision support across sites.
+  * Developed predictive models using neural networks and SHAP analysis to optimize display design and minimize scrap.
+  * Automated data processing workflows to improve efficiency and ensure data integrity.
+  * Designed interactive dashboards in Power BI to provide actionable insights to stakeholders.
 
 * International Committee of the Red Cross: **Data Analytics Lead**
   Jun 2018 - Sep 2023
-  * Led small teams, fostering collaboration and efficient data handling, and trained colleagues in complex SQL and Python data processes.
-  * Acted as a Project Manager for the Jerusalem Delegation, steering the Family Visit Program through feasibility and planning phases.
-  * Evaluated and improved the quality of Prot6 databases and infrastructure.
-  * Handled highly sensitive personal data, ensuring secure and ethical management.
-  * Prepared intricate reports and infographics for strategic decision-making.
-  * Created an automated dashboard for the Syrian delegation that integrates external information sources into the ICRC PCP framework, mapping events and providing statistical feedback.
-  * Supported delegates and operations with reports and analyses, enhancing data-driven decision-making.
-
+  * Led secure and structured management of sensitive humanitarian data, including access control policies and data flow optimization across field offices and headquarters.
+  * Implemented SQL- and Python-based workflows to standardize data ingestion, cleaning, and archival for regional programs.
+  * Coordinated cross-location data projects and trained staff on metadata practices, secure handling, and long-term digital preservation strategies.
+  * Oversaw high-volume data lifecycles, including retention and deletion planning in compliance with legal frameworks.
+  * Developed data quality pipelines and internal tools to enhance ETL performance, reduce manual handling, and flag inconsistencies.
+    
 * Institute for Research in Biomedicine: **Research Scientist**
   Jan 2010 - Jun 2017
-  * Conducted molecular dynamics simulations of DNA and protein molecules, optimizing software tools like AMBER and Gromacs.
-  * Applied advanced statistical methods to interpret biological data from experiments and simulations.
-  * Set up a NoSQL database for storing MD simulations and contributed to disseminating research findings through graphical visualizations and scientific publications.
+  * Conducted molecular dynamics simulations of DNA and protein molecules
+  * Parameterized force-field for DNA simulation in AMBER and Gromacs.
+  * Designed and implemented NoSQL database infrastructure (Apache Cassandra) for high-throughput storage of molecular dynamics simulations (~TB scale).
   * My most notable work in Nature Methods: Ivan Ivani et al. Nature methods 13, no. 1 (2016): 55-58.
   * List of all my publications: https://scholar.google.com/citations?user=GqCZ-0QAAAAJ&hl=en
   
@@ -58,4 +58,4 @@ Awards
   
 Languages
 ======
-* English (Fluent), Czech (Fluent), Spanish (Fluent), Russian (Conversational), French (basic), Serbian (Native).
+* Fluently: English, Spanish, Czech, Serbian (Native). Conversational: Russian, German.
