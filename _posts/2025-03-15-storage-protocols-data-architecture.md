@@ -1,4 +1,4 @@
----
+![ChatGPT Image Apr 16, 2025, 03_52_10 PM](https://github.com/user-attachments/assets/e49d1e0c-a7eb-481c-8d17-467076a9506f)---
 title: 'From Molecules to Manufacturing: Understanding Storage Protocols and Modern Data Architecture'
 date: 2024-03-15
 permalink: /posts/2024/03/blog-post-3/
@@ -10,6 +10,7 @@ tags:
 ---
 In today's data-driven world, choosing the right storage protocol and architecture is crucial for performance, scalability, and cost efficiency. Over the years, I've worked with various storage systems—from NoSQL databases during my PhD to CRM systems, data warehouses, and data lakes in manufacturing. In this post, I’ll break down key storage protocols (NFS, SMB, S3) and explain the differences between data warehouses, data lakes, and the emerging data lakehouse paradigm.
 
+![image](https://github.com/user-attachments/assets/43972d24-c44d-4f96-8d48-7fbe550464ae)
 
 ---
 ### Data Storage Concepts: Warehouse vs Lake vs Lakehouse
