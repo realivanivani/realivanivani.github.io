@@ -1,4 +1,4 @@
-![ChatGPT Image Apr 16, 2025, 03_52_10 PM](https://github.com/user-attachments/assets/e49d1e0c-a7eb-481c-8d17-467076a9506f)---
+---
 title: 'From Molecules to Manufacturing: Understanding Storage Protocols and Modern Data Architecture'
 date: 2024-03-15
 permalink: /posts/2024/03/blog-post-3/
