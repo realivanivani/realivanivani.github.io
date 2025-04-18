@@ -1,14 +1,13 @@
 ---
 title: 'A/B testing - principles and practicalities on how to setup the experiment'
-date: 2025-03-03
-permalink: /posts/2025/03/blog-post-1/
+date: 2024-12-13
+permalink: /posts/2024/12/blog-post-1/
 tags:
   - Data Science
   - data-driven
   - decision making
   - A/B testing
   - hypothesis
-  - 
 ---
 One of the most common Data Scientist requeriments nowadays is A/B testing, also known as split testing. A basic scientific method, A/B testing is a fundamental technique in data-driven decision-making, widely used in marketing, product development, and user experience optimization. It involves comparing two versions of a webpage, email campaign, or app feature to determine which performs better based on key metrics such as conversion rates, engagement, or revenue. By systematically testing variations and analyzing statistical significance, businesses can make informed changes that improve user experience and drive growth.
 
