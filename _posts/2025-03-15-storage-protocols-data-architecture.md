@@ -1,7 +1,7 @@
 ---
 title: 'From Molecules to Manufacturing: Understanding Storage Protocols and Modern Data Architecture'
-date: 2024-03-15
-permalink: /posts/2024/03/blog-post-3/
+date: 2025-03-15
+permalink: /posts/2025/03/blog-post-3/
 tags:
   - data architecture
   - storage protocols
