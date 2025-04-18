@@ -1,7 +1,7 @@
 ---
 title: 'Automating Insight: Bash Scripting, Command-Line Power Tools, and Data Querying'
-date: 2025-03-02
-permalink: /posts/2025/03/blog-post-1/
+date: 2025-04-10
+permalink: /posts/2025/04/blog-post-2/
 tags:
   - data architecture
   - scripting
@@ -18,14 +18,14 @@ During my PhD, I learned to rely on these command-line utilities to wrangle vast
 
 This post covers the fundamentals of **Bash scripting**, **essential CLI tools** (`find`, `du`, `rsync`, `robocopy`, `rclone`), **ssh & remote access**, and **SQL/data querying**, with practical examples from both academic and industry use cases.
 
-![image](https://github.com/user-attachments/assets/5f0dd834-f390-4b78-a10e-c76787860318)
+![image](https://budgetvm.com/wp-content/uploads/2021/06/c1.gif)
 
 ---
 
 ### 🖥️ Bash Shell Scripting: Automating Everything
 
 **Why Bash?**  
-Bash is the glue of the UNIX world. It’s lightweight, fast, and ideal for automating repetitive data and file operations.
+When I got into the world of computational biology, UNIX was the default and Bash is the glue of the UNIX world. It’s lightweight, fast, and ideal for automating repetitive data and file operations.
 
 #### Example: Batch Converting Simulation Files
 During my PhD, I often needed to convert dozens of molecular dynamics output files into analysis-ready formats:
@@ -49,7 +49,7 @@ done
 
 ### 🔧 Command-Line Power Tools
 
-These tools are indispensable for data engineering, systems maintenance, and data migration.
+These tools are indispensable for data engineering, systems maintenance, and data migration. I used them regularly to check on the running simulations and monitor their size and disk usage.
 
 #### `find`: Recursively locate files with filters
 
