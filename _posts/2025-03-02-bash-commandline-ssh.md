@@ -148,9 +148,11 @@ Now, logging in is as easy as:
 ```bash
 ssh mycluster
 ```
+
 ### RSA key-based authentication
 
 A very useful thing is having automized ssh logging by using the ssh-keygen tool to create a key pair. Check this [webpage](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server) to see how to setup rsa key.
+
 ---
 
 ### How It All Ties Together
