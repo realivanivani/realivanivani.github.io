@@ -10,16 +10,11 @@ I was born and raised in Novi Sad, Serbia, but as soon as I got scholarships I w
 
 ## Education
 ![image](https://github.com/user-attachments/assets/6578c945-19c0-44f8-bf01-62a5aa710568){: .align-right width="200"}  
-My academic journey took me to Prague, where I studied physics at Charles University after receiving a scholarship. I earned my MSc degree in Biophysics there, working on Raman spectroscopy of biomolecules. During my time in Prague, I became fluent in Czech, adding to my native Serbian.
-Later, I moved to Barcelona to pursue a PhD in Structural Biology under Professor Modesto Orozco. This period was crucial for my development as a scientist, and I was fortunate to contribute to some exciting research. This period was crucial for my development as a scientist, and I was fortunate to contribute to some exciting research. While in Barcelona, I also became fluent in Spanish.
-
+My academic journey took me to Prague, where I studied physics at Charles University after receiving a scholarship. I earned my MSc degree in Biophysics there, working on Raman spectroscopy of biomolecules. During my time in Prague, I became fluent in Czech, adding to my native Serbian. Later, I moved to Barcelona to pursue a PhD in Structural Biology under Professor Modesto Orozco. This period was crucial for my development as a scientist, and I was fortunate to contribute to some exciting research. This period was crucial for my development as a scientist, and I was fortunate to contribute to some exciting research. While in Barcelona, I also became fluent in Spanish.
 
 ## Researcher in Computational Biology in Prof. Orozco's Lab, Barcelona, Spain
 ![DNA surrounded with proteins](/images/dna_surrounded_proteins.jfif){: .align-right width="200"}
-My scientific career began in computational biology, where I specialized in force-field parameterization and molecular dynamics simulations of DNA, RNA, and proteins. At the Orozco Lab in Barcelona, I generated and analyzed petabytes of simulation data, applying tools to analyze and extract high-resolution metadata from complex molecular systems. This work contributed to structural biology and pharmaceutical design, culminating in publications such as one  in *Nature Methods* (see my Publications tab!). I also collaborated with Dr. Eric Kool’s group at Stanford, gaining industry exposure and applying my research to real-world drug discovery pipelines.
-
-List of all my publications: **https://scholar.google.com/citations?user=GqCZ-0QAAAAJ&hl=en**
-
+My scientific career began in computational biology, where I specialized in force-field parameterization and molecular dynamics simulations of DNA, RNA, and proteins. At the Orozco Lab in Barcelona, I generated and analyzed petabytes of simulation data, applying tools to analyze and extract high-resolution metadata from complex molecular systems. This work contributed to structural biology and pharmaceutical design, culminating in publications such as one  in *Nature Methods* (see my Publications tab!). I also collaborated with Dr. Eric Kool’s group at Stanford, gaining industry exposure and applying my research to real-world drug discovery pipelines. Full list of all my [scientific publications](https://scholar.google.com/citations?user=GqCZ-0QAAAAJ&hl=en)
 
 Work experience
 ======
