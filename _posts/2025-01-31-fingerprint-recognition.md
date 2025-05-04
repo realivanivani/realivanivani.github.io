@@ -161,7 +161,7 @@ val_gen = DataGenerator(x_val, label_val, data_dict['real'][0], label_real_dict,
 
 ## **Model Architecture**
 
-We implement **Siamese CNN**:
+There are many different ways to solve this problem (see Notebooks on [Kaggle](https://www.kaggle.com/datasets/ruizgara/socofing)), but we chose to implement **Siamese CNN**:
 ![image](https://github.com/user-attachments/assets/88834915-4b61-4e11-b767-08054ed02abc)
 
 ```python
