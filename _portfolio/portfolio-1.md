@@ -1,7 +1,6 @@
 ---
 title: "Fingerprint recognition using Siamese CNN model"
-excerpt: "CNN Siamese model for fingerprint recognition using Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation1<br/><img ![image](https://github.com/user-attachments/assets/74d4aa11-8092-46c7-b24d-7e5d490fa8d2)
->"
+excerpt: "CNN Siamese model for fingerprint recognition using Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation1<br/><img src='/images/440195189-90aeea1b-0aea-4506-b037-261aeeebc1e6.png'>"
 collection: portfolio
 ---
 
