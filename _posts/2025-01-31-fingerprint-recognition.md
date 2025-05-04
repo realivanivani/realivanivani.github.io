@@ -24,9 +24,43 @@ This blog details the step-by-step implementation of this idea, covering dataset
 
 ---
 
-## **Dataset Preparation**
+## **Dataset Preparation and Label Extraction**
 
-Our dataset consists of four subsets:
+Our fingerprint dataset follows a strict naming convention. For instance:
+
+```
+001__M_Left_index_SWarp.BMP
+```
+
+From this, we extract four key labels:
+
+* **Subject ID** (001)
+* **Gender** (M = 0, F = 1)
+* **Hand** (Left = 0, Right = 1)
+* **Finger type** (Index = 1)
+
+We implemented this parsing logic in the `extract_label` function:
+
+```python
+def extract_label(img_path):
+    ...
+    gender = 0 if gender_str == 'M' else 1
+    hand = 0 if hand_str == 'Left' else 1
+    finger_map = {'thumb': 0, 'index': 1, 'middle': 2, 'ring': 3, 'little': 4}
+    ...
+```
+
+We load and preprocess all `Altered-Easy` images by resizing them to 90x90 pixels and saving both the image arrays and label arrays:
+
+```python
+images = np.empty((num_images, 90, 90), dtype=np.uint8)
+labels = np.empty((num_images, 4), dtype=np.uint16)
+...
+images[i] = cv2.resize(image, target_size)
+labels[i] = extract_label_alt(image_path)
+```
+
+Now, our dataset consists of four subsets:
 
 * **Real** (original fingerprints)
 * **Easy**, **Medium**, and **Hard** (distorted fingerprints with increasing complexity)
@@ -237,4 +271,11 @@ print(classification_report(y_true, y_pred_labels))
 
 ## **Conclusion**
 
-This project successfully implemented a **Siamese CNN for fingerprint recognition**. Future improvements include **class-balanced loss functions**, **adversarial training**, and **threshold tuning** to enhance recall. Jovan’s idea has great potential for real-world security applications! 🚀
+This project successfully implemented a **Siamese CNN for fingerprint recognition**. Future improvements include **class-balanced loss functions**, **adversarial training**, and **threshold tuning** to enhance recall. 
+This approach can be extended to:
+
+* Face or iris verification
+* Signature comparison
+* Duplicate detection in document datasets
+
+Jovan’s idea has great potential for real-world security applications! 🚀
