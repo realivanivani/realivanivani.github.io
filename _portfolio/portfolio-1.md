@@ -239,7 +239,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 
 ---
 
-## Step 6: Model Training**
+## Step 6: Model Training
 
 Using `model.fit()` with `train_gen` and `val_gen`, we train the network for 15 epochs. Because we use a generator, memory overhead is minimal, and data augmentation is seamlessly integrated.
 
@@ -251,7 +251,7 @@ Training is monitored using accuracy and binary cross-entropy loss.
 
 ---
 
-## Step 7: Evaluation on Unseen Data**
+## Step 7: Evaluation on Unseen Data
 
 Finally, we test the model by pairing a randomly selected distorted validation image with:
 
@@ -265,11 +265,9 @@ pred_matched = model.predict([random_img, matched_img])[0][0]
 pred_unmatched = model.predict([random_img, unmatched_img])[0][0]
 ```
 
-## **Model Evaluation**
+![image](https://github.com/user-attachments/assets/90aeea1b-0aea-4506-b037-261aeeebc1e6)
 
 We visualize model performance using **Confusion Matrix**, **Precision-Recall Curve**, and **ROC Curve**.
-
-![image](https://github.com/user-attachments/assets/90aeea1b-0aea-4506-b037-261aeeebc1e6)
 
 ```python
 from sklearn.metrics import classification_report, confusion_matrix
@@ -327,7 +325,7 @@ This approach can be extended to:
 
 ---
 
-## **Further Reading & Resources**
+## Further Reading & Resources
 
 * [Koch et al., 2015 – Siamese Neural Networks for One-shot Image Recognition](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
 * [imgaug](https://github.com/aleju/imgaug)
