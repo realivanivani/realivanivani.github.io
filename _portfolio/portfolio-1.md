@@ -4,46 +4,73 @@ excerpt: "CNN Siamese model for fingerprint recognition using Python & Keras, wh
 collection: portfolio
 ---
 
+# Building a Fingerprint Verification System Using a Siamese Neural Network in Keras
+
+## Introduction
+
+Biometric authentication, particularly fingerprint recognition, remains one of the most trusted and widely deployed forms of identity verification. However, traditional classification methods may not generalize well when facing altered or partially deformed fingerprints. In this post, we walk through the development of a deep learning-based verification pipeline using a **Siamese Neural Network**. Our dataset includes real and synthetically altered fingerprint images, and our goal is to train a model that can determine whether two fingerprint images belong to the same individual.
+
+We will explore the following:
+
+* Preprocessing and label extraction from fingerprint image filenames
+* Augmentation strategies for robustness
+* Data generation for training on pairwise data
+* Architecture and training of a Siamese neural network
+
 The idea for this project stemmed from a collaboration with my friend Jovan on his Bachelor's thesis. His concept was to use a **Siamese Convolutional Neural Network (Siamese CNN)** for fingerprint recognition, structured as follows:
-This blog outlines how we implemented this in Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation. You can explore the project's [Git repo](https://github.com/realivanivani/fingerprint-recognition).
+This blog outlines how we implemented this in Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation. You can explore the project's [Git repo](https://github.com/realivanivani/fingerprint-recognition) where you can also find the [Jupyter Notebook]().
 
 1. **Two parallel CNN branches** (with shared weights) extract feature representations from input fingerprint images.
 2. **Feature subtraction** is applied to compare the extracted features.
 3. **A final convolutional + pooling layer** processes the difference.
 4. **A sigmoid layer** classifies whether the fingerprints match.
 
-This blog details the step-by-step implementation of this idea, covering dataset preparation, augmentation, model architecture, training, and evaluation.
 
 ![image](https://github.com/user-attachments/assets/3abe2533-a104-471a-88cb-dea369745831)
 
 ---
 
-## **Dataset Preparation**
+## Step 1: Dataset and Label Extraction
 
-Our dataset consists of four subsets:
+Our fingerprint dataset follows a strict naming convention. For instance:
 
-* **Real** (original fingerprints)
-* **Easy**, **Medium**, and **Hard** (distorted fingerprints with increasing complexity)
-
-### **Loading the Dataset**
-
-We use NumPy to load the dataset, which contains images and corresponding labels:
-
-```python
-def load_dataset():
-    datasets = ['real', 'easy', 'medium', 'hard']
-    data_dict = {}
-    for dataset in datasets:
-        x_data = np.load(f'dataset/x_{dataset}.npy')
-        y_data = np.load(f'dataset/y_{dataset}.npy')
-        data_dict[dataset] = (x_data, y_data)
-        print(f"{dataset}: X shape {x_data.shape}, Y shape {y_data.shape}")
-    return data_dict
-
-data_dict = load_dataset()
+```
+001__M_Left_index_SWarp.BMP
 ```
 
-### **Data Visualization**
+From this, we extract four key labels:
+
+* **Subject ID** (001)
+* **Gender** (M = 0, F = 1)
+* **Hand** (Left = 0, Right = 1)
+* **Finger type** (Index = 1)
+
+We implemented this parsing logic in the `extract_label` function:
+
+```python
+def extract_label(img_path):
+    ...
+    gender = 0 if gender_str == 'M' else 1
+    hand = 0 if hand_str == 'Left' else 1
+    finger_map = {'thumb': 0, 'index': 1, 'middle': 2, 'ring': 3, 'little': 4}
+    ...
+```
+
+We load and preprocess all `Altered-Easy` images by resizing them to 90x90 pixels and saving both the image arrays and label arrays:
+
+```python
+images = np.empty((num_images, 90, 90), dtype=np.uint8)
+labels = np.empty((num_images, 4), dtype=np.uint16)
+...
+images[i] = cv2.resize(image, target_size)
+labels[i] = extract_label_alt(image_path)
+```
+
+---
+
+## Step 2: Dataset Loading and Visualization
+
+Using `np.load`, we import four subsets: `real`, `easy`, `medium`, and `hard`, and confirm their shapes. Each subset is visualized to verify the integrity of image-label pairs.
 
 A quick visualization ensures that images are loaded correctly:
 
@@ -59,7 +86,9 @@ def visualize_samples(data_dict):
 visualize_samples(data_dict)
 ```
 
-### **Train-Test Split**
+This step is crucial for verifying preprocessing correctness, especially when dealing with a custom dataset.
+
+### Train-Test Split
 
 We combine `easy`, `medium`, and `hard` subsets to create a training set and reserve 10% for validation:
 
@@ -72,7 +101,14 @@ x_train, x_val, label_train, label_val = train_test_split(x_data, label_data, te
 
 ---
 
-## **Data Augmentation**
+## Step 3: Data Augmentation
+
+To improve model generalization, we apply spatial transformations using the `imgaug` library. These include:
+
+* Gaussian blur
+* Rotation (±30 degrees)
+* Random translation and scaling
+
 
 Since `imgaug` is not compatible with NumPy 2.x, we downgraded NumPy:
 
@@ -108,11 +144,18 @@ def preview_augmentation(images):
 preview_augmentation([x_data[40000]] * 9)
 ```
 
+We preview augmentations to ensure that variations are realistic and preserve fingerprint features.
+
 ---
 
-## **Data Generator**
+## Step 4: Siamese Data Generator
 
-Since the dataset is large, we use a **custom Keras DataGenerator** to load images in batches during training.
+Siamese networks require pairs of inputs:
+
+* **Positive pairs**: same identity (label = 1)
+* **Negative pairs**: different identities (label = 0)
+
+Since the dataset is large, we created a custom Keras `DataGenerator` that samples image pairs using label dictionary lookups. Half of the batch contains matching pairs, while the rest contains mismatched pairs.
 
 ```python
 class DataGenerator(keras.utils.Sequence):
@@ -151,11 +194,21 @@ train_gen = DataGenerator(x_train, label_train, data_dict['real'][0], label_real
 val_gen = DataGenerator(x_val, label_val, data_dict['real'][0], label_real_dict, shuffle=False)
 ```
 
+This strategy balances the training dataset and ensures that the model learns from both types of comparisons.
+
 ---
 
-## **Model Architecture**
+## Step 5: Siamese Network Architecture
 
-We implement **Siamese CNN**:
+The core model consists of **twin convolutional networks** with shared weights that extract features from two input images. The absolute difference of their feature embeddings is passed through a dense layer and finally a sigmoid output:
+
+### Architecture Highlights:
+
+* Twin CNNs: Two Conv2D + MaxPooling layers
+* Shared weights for efficient learning
+* Dense layers post-subtraction for decision making
+* Output: Sigmoid probability of match (1) or mismatch (0)
+  
 ![image](https://github.com/user-attachments/assets/88834915-4b61-4e11-b767-08054ed02abc)
 
 ```python
@@ -189,15 +242,40 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 model.summary()
 ```
 
+The final model is trained with `binary_crossentropy` loss and an `Adam` optimizer:
+
+```python
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+```
+
+
 ---
 
-## **Training**
+## Step 6: Model Training**
+
+Using `model.fit()` with `train_gen` and `val_gen`, we train the network for 15 epochs. Because we use a generator, memory overhead is minimal, and data augmentation is seamlessly integrated.
 
 ```python
 history = model.fit(train_gen, epochs=15, validation_data=val_gen)
 ```
 
+Training is monitored using accuracy and binary cross-entropy loss.
+
 ---
+
+## Step 7: Evaluation on Unseen Data**
+
+Finally, we test the model by pairing a randomly selected distorted validation image with:
+
+1. A matched real image (same subject/hand/finger)
+2. An unmatched real image (different identity)
+
+The model predicts similarity probabilities for both.
+
+```python
+pred_matched = model.predict([random_img, matched_img])[0][0]
+pred_unmatched = model.predict([random_img, unmatched_img])[0][0]
+```
 
 ## **Model Evaluation**
 
@@ -220,16 +298,51 @@ print(classification_report(y_true, y_pred_labels))
 
 ![image](https://github.com/user-attachments/assets/fa269629-d427-44cf-9bc4-213c7d50e5f7)
 
-### **Results Summary**
+
+## ✅ **Results & Observations**
 
 * **Precision:** 1.00 for matching fingerprints.
-* **Recall:** 0.73 for matching fingerprints (improvement needed).
-* **Overall Accuracy:** 86%.
+* **Recall:** 0.68 for matching fingerprints (improvement needed).
+* **Overall Accuracy:** 84%.
 * **ROC AUC:** 1.00 (near-perfect classification).
+
+## Observations
+
+* The model performs well across a variety of synthetic deformations.
+* Siamese networks show strong generalization in **one-shot or few-shot** scenarios.
+* Image-level pairing combined with metadata lookup offers a flexible way to manage supervised contrastive learning.
 
 ---
 
-## **Conclusion**
+## ⚠️ **Known Constraints**
 
-This project successfully implemented a **Siamese CNN for fingerprint recognition**. Future improvements include **class-balanced loss functions**, **adversarial training**, and **threshold tuning** to enhance recall. Jovan’s idea has great potential for real-world security applications! 🚀
+* The pipeline depends on `imgaug`, which currently requires **NumPy < 2.0** due to compatibility issues.
+* Label extraction assumes a strict filename pattern.
+
+To avoid runtime errors:
+
+```bash
+pip install numpy<2.0
+```
+
+---
+
+## 🚀 **Conclusion**
+
+This fingerprint verification pipeline leverages the power of **Siamese networks** for image similarity detection. Through careful preprocessing, data augmentation, and label management, we build a robust model capable of biometric verification under challenging conditions.
+
+This approach can be extended to:
+
+* Face or iris verification
+* Signature comparison
+* Duplicate detection in document datasets
+
+---
+
+## **Further Reading & Resources**
+
+* [Koch et al., 2015 – Siamese Neural Networks for One-shot Image Recognition](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf)
+* [imgaug](https://github.com/aleju/imgaug)
+* [Keras Functional API](https://keras.io/guides/functional_api/)
+* [SOCOFing Fingerprint Dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/QLCFR9)
 
