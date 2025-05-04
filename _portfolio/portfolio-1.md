@@ -1,6 +1,7 @@
 ---
 title: "Fingerprint recognition using Siamese CNN model"
-excerpt: "CNN Siamese model for fingerprint recognition using Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation1<br/><img src='https://github.com/user-attachments/assets/3abe2533-a104-471a-88cb-dea369745831'>"
+excerpt: "CNN Siamese model for fingerprint recognition using Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation1<br/><img ![image](https://github.com/user-attachments/assets/74d4aa11-8092-46c7-b24d-7e5d490fa8d2)
+>"
 collection: portfolio
 ---
 
@@ -155,7 +156,8 @@ val_gen = DataGenerator(x_val, label_val, data_dict['real'][0], label_real_dict,
 
 ## **Model Architecture**
 
-We implement **Jovan’s Siamese CNN**:
+We implement **Siamese CNN**:
+![image](https://github.com/user-attachments/assets/88834915-4b61-4e11-b767-08054ed02abc)
 
 ```python
 from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Flatten, Dense, Dropout, Subtract
@@ -202,6 +204,8 @@ history = model.fit(train_gen, epochs=15, validation_data=val_gen)
 
 We visualize model performance using **Confusion Matrix**, **Precision-Recall Curve**, and **ROC Curve**.
 
+![image](https://github.com/user-attachments/assets/90aeea1b-0aea-4506-b037-261aeeebc1e6)
+
 ```python
 from sklearn.metrics import classification_report, confusion_matrix
 import seaborn as sns
@@ -214,6 +218,8 @@ plt.show()
 
 print(classification_report(y_true, y_pred_labels))
 ```
+
+![image](https://github.com/user-attachments/assets/fa269629-d427-44cf-9bc4-213c7d50e5f7)
 
 ### **Results Summary**
 
