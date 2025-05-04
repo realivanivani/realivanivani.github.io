@@ -1,14 +1,11 @@
 ---
-title: "Fingerprint recognition using Siamese CNN model"
+title: "Fingerprint Verification System Using a Siamese Neural Network in Keras"
 excerpt: "CNN Siamese model for fingerprint recognition using Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation1<br/><img src='/images/440195189-90aeea1b-0aea-4506-b037-261aeeebc1e6.png'>"
 collection: portfolio
 ---
+## Background
 
-# Building a Fingerprint Verification System Using a Siamese Neural Network in Keras
-
-## Introduction
-
-Biometric authentication, particularly fingerprint recognition, remains one of the most trusted and widely deployed forms of identity verification. However, traditional classification methods may not generalize well when facing altered or partially deformed fingerprints. In this post, we walk through the development of a deep learning-based verification pipeline using a **Siamese Neural Network**. Our dataset includes real and synthetically altered fingerprint images, and our goal is to train a model that can determine whether two fingerprint images belong to the same individual.
+Biometric authentication, particularly fingerprint recognition, remains one of the most trusted and widely deployed forms of identity verification. However, traditional classification methods may not generalize well when facing altered or partially deformed fingerprints. We'll walk through the development of a deep learning-based verification pipeline using a **Siamese Neural Network**. Our dataset includes real and synthetically altered fingerprint images, and our goal is to train a model that can determine whether two fingerprint images belong to the same individual. This blog outlines how we implemented this in Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation. You can explore the project's [Git repo](https://github.com/realivanivani/fingerprint-recognition) where you can also find the [Jupyter Notebook](https://github.com/realivanivani/fingerprint-recognition/blob/main/notebooks/fingerprint-recognition_iivani_version.ipynb).
 
 We will explore the following:
 
@@ -16,15 +13,6 @@ We will explore the following:
 * Augmentation strategies for robustness
 * Data generation for training on pairwise data
 * Architecture and training of a Siamese neural network
-
-The idea for this project stemmed from a collaboration with my friend Jovan on his Bachelor's thesis. His concept was to use a **Siamese Convolutional Neural Network (Siamese CNN)** for fingerprint recognition, structured as follows:
-This blog outlines how we implemented this in Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation. You can explore the project's [Git repo](https://github.com/realivanivani/fingerprint-recognition) where you can also find the [Jupyter Notebook]().
-
-1. **Two parallel CNN branches** (with shared weights) extract feature representations from input fingerprint images.
-2. **Feature subtraction** is applied to compare the extracted features.
-3. **A final convolutional + pooling layer** processes the difference.
-4. **A sigmoid layer** classifies whether the fingerprints match.
-
 
 ![image](https://github.com/user-attachments/assets/3abe2533-a104-471a-88cb-dea369745831)
 
