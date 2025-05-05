@@ -11,7 +11,7 @@ tags:
 ---
 
 The idea for this project stemmed from a collaboration with my friend Jovan on his Bachelor's thesis. His concept was to use a **Siamese Convolutional Neural Network (Siamese CNN)** for fingerprint recognition, structured as follows:
-This blog outlines how we implemented this in Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation. You can explore the project's [Git repo](https://github.com/realivanivani/fingerprint-recognition).
+This blog outlines how we implemented this in Python & Keras, while dealing with dataset augmentation, Siamese architecture, and model validation. You can explore the project's [Git repo](https://github.com/realivanivani/fingerprint-recognition) and [Jupyter Notebooks](https://github.com/realivanivani/fingerprint-recognition/tree/main/notebooks).
 
 1. **Two parallel CNN branches** (with shared weights) extract feature representations from input fingerprint images.
 2. **Feature subtraction** is applied to compare the extracted features.
