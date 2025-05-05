@@ -111,6 +111,11 @@ Beyond the directory structure, several files are crucial for a well-managed dat
         ```
 
 3.  **`.gitignore`**: This file tells Git which files or directories to ignore (e.g., virtual environment folders like `venv/`, large data files not meant for version control, credential files, system files like `.DS_Store`). Cookiecutter templates usually provide a sensible default `.gitignore`.
+        ```bash
+        echo "folder_name/" >> .gitignore
+        git add .gitignore
+        git commit -m "Add folder_name/ to .gitignore"
+        ```
 
 4.  **`LICENSE`**: Choose an open-source license (e.g., MIT, Apache 2.0) and include the license file to clarify how others can use your code.
 
