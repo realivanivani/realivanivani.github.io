@@ -14,7 +14,7 @@ I'm in the job hunting mode at the moment and one thing has become crystal clear
 
 This realization led me to explore tools and best practices, and this post shares what I've learned. We'll dive into how to use Cookiecutter, specifically the popular cookiecutter-data-science template, to structure data science projects effectively. We'll cover managing these projects with Git, discuss essential components like the README.md and requirements.txt, and briefly touch upon Kedro as another powerful framework. Let's build portfolios that impress!
 
-![image](https://github.com/user-attachments/assets/5f1ece1f-8f92-4a6c-801e-e340f750a04b)
+<img width="965" alt="image" src="https://github.com/user-attachments/assets/47065e52-e37e-4925-ad06-d47d1ab3fa33" />
 
 ### What is Cookiecutter?
 
@@ -22,7 +22,7 @@ Cookiecutter is a simple command-line tool that creates projects from project te
 
 You can install it easily using pip:
 ```bash
-pip install cookiecutter
+pipx install cookiecutter-data-science
 ```
 
 ### The Cookiecutter Data Science Template
@@ -31,7 +31,7 @@ One of the most widely used templates for data science is `cookiecutter-data-sci
 
 You can create a new project using this template by running:
 ```bash
-cookiecutter gh:drivendata/cookiecutter-data-science
+ccds https://github.com/drivendataorg/cookiecutter-data-science
 ```
 Cookiecutter will then ask you a series of questions (like `project_name`, `repo_name`, `author_name`, etc.) to customize the template for your specific project.
 
