@@ -4,7 +4,8 @@ excerpt: "Transforming Raw Coffee Survey Data: A PostgreSQL Cleaning Journey <br
 collection: portfolio
 ---
 
-## Introduction
+Introduction
+----
 
 ## Dataset Details
 
