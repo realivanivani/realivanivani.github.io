@@ -1,7 +1,7 @@
 ---
 title: 'Automating Insight: Bash Scripting, Command-Line Power Tools, and Data Querying'
 date: 2025-04-10
-permalink: /posts/2025/04/blog-post-2/
+permalink: /posts/2025/04/blog-post-1/
 tags:
   - data architecture
   - scripting
