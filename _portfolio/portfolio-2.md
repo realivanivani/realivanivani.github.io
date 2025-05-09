@@ -1,6 +1,6 @@
 ---
 title: "SQL Data Cleaning and Preparation for Analysis"
-excerpt: "Transforming Raw Coffee Survey Data: A PostgreSQL Cleaning Journey <br/><img src='/images/500x300.png'>"
+excerpt: "Transforming Raw Coffee Survey Data: A PostgreSQL Cleaning Journey <br/><img src='/images/coffee.png'>"
 collection: portfolio
 ---
 
