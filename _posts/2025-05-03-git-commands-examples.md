@@ -7,11 +7,12 @@ tags:
   - command-line
   - collaboration
   - examples
+  - basics
 ---
 
 As a data scientist who is supposed to be working closely with developers, I constantly find myself forgetting Git commands, especially when switching between feature branches, stashing changes, or pushing to remotes. While Git is integrated into **VSCode** and offers a visual module for staging, committing, and syncing, I still **prefer the command line**. It gives me more control and a clearer understanding of what's happening under the hood.
 
-This post is a **practical reference** with Git commands I use (or forget to use) when working in a **collaborative, multi-developer environment**. Whether you're tracking changes in a Jupyter notebook, resolving merge conflicts in a data pipeline, or reviewing a colleague's commit history, this guide will help you keep your workflow clean and efficient.
+This post is a practical reference with Git commands I use (or forget to use) when working in a collaborative, multi-developer environment. Whether you're tracking changes in a Jupyter notebook, resolving merge conflicts in a data pipeline, or reviewing a colleague's commit history, this guide will help you keep your workflow clean and efficient. I’ll keep referring to this blog every time I forget to rebase properly. Hopefully, it’ll help you too.
 
 ![image](https://github.com/user-attachments/assets/b468597e-ea2d-49e9-a1d1-0b6528b451ab)
 
@@ -37,7 +38,7 @@ git init
 
 ---
 
-## 📥 **Getting a Project: Cloning from Remote**
+## **Getting a Project: Cloning from Remote**
 
 **Use when joining a team project or syncing from GitHub/GitLab.**
 
@@ -84,7 +85,7 @@ git checkout -b model-tuning
 
 ---
 
-## 🌍 **Remote Repositories**
+## **Remote Repositories**
 
 **Use to collaborate via GitHub/GitLab/Bitbucket.**
 
@@ -106,31 +107,6 @@ git reset                     # Unstage files
 git reset --hard              # Reset working directory and staging
 git revert <commit>           # Safely undo a specific commit
 git reflog                    # Recover lost commits or branches
-```
-
----
-
-## 🧠 **Advanced Use Cases**
-
-**Use for complex workflows or emergency saves.**
-
-* Temporarily store changes:
-
-```bash
-git stash
-git stash pop
-```
-
-* Clean commit history with rebasing:
-
-```bash
-git rebase main
-```
-
-* Apply one specific commit to another branch:
-
-```bash
-git cherry-pick <commit>
 ```
 
 ---
@@ -194,51 +170,41 @@ git branch -d churn-model
 
 **Use when you start a local project and want to back it up or share it later by connecting to GitHub.**
 
-Imagine you’re prototyping a new **machine learning model** on your laptop. You want to keep it private for now, but still version-controlled and eventually push it to a private GitHub repo.
+Imagine you’re starting a new machine learning model on your laptop. You want to keep it private for now, but still version-controlled and eventually push it to a private GitHub repo.
 
 ### **Step-by-step: Local to GitHub (private)**
 
-1. **Initialize Git inside your project folder**:
+1 . **Initialize Git inside your project folder**:
 
 ```bash
 cd ~/projects/customer-churn
 git init
 ```
 
-2. **Add and commit your files**:
+2 . **Add and commit your files**:
 
 ```bash
 git add .
 git commit -m "Initial commit: data prep and baseline model"
 ```
 
-3. **Create a private repo on GitHub**
+3 . **Create a private repo on GitHub**
    Go to [github.com](https://github.com) → Click **“New Repository”** →
    Name it (e.g., `customer-churn`) → **Set it to Private** → **Do NOT initialize with README** (you already did that locally).
 
-4. **Connect your local repo to GitHub**:
+4 . **Connect your local repo to GitHub**:
 
 ```bash
 git remote add origin https://github.com/yourusername/customer-churn.git
 ```
 
-5. **Push your local repo to GitHub**:
+5 . **Push your local repo to GitHub**:
 
 ```bash
 git push -u origin main
 ```
 
-> If your local branch is still called `master`, either rename it to `main` or push with:
->
-> ```bash
-> git push -u origin master
-> ```
-
 Now your private project is **safe, backed up, and shareable** when needed.
-
----
-
-Would you like me to reformat this entire blog post into Markdown or ready-to-publish format for Medium, DEV.to, or another platform?
 
 ---
 
@@ -246,5 +212,5 @@ Would you like me to reformat this entire blog post into Markdown or ready-to-pu
 
 Git helps you **track, collaborate, and experiment** without losing work or overwriting others’ changes. Whether you're building machine learning pipelines, cleaning data, or pushing notebooks to production, Git is your friend.
 
-I’ll keep referring to this blog every time I forget `git stash pop` or how to rebase properly. Hopefully, it’ll help you too.
+I’ll keep referring to this blog every time I forget to rebase properly. Hopefully, it’ll help you too.
 
