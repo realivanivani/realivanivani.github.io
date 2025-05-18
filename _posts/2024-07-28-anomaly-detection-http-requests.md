@@ -11,18 +11,26 @@ tags:
 ---
 A while back, I was given an interesting assignment: build a model to detect anomalous HTTP requests. The goal was to identify malicious web traffic by analyzing patterns in normal and anomalous requests. This led me to explore the **CSIC 2010 dataset**, a well-known benchmark for HTTP anomaly detection.  
 
-In this blog, I’ll walk through my approach—from preprocessing the raw dataset to training a machine learning model—and share key insights along the way.  
+Even though the first assignment was to apply unsupervised learning, I took a supervised learning approach. However, since the dataset was originally designed for unsupervised learning, I decided to explore that path as well.
+
+In this blog, I’ll walk through both approaches—supervised (Random Forest) and unsupervised (Isolation Forest & Autoencoders)—and compare their performance. 
+
+![image](https://github.com/user-attachments/assets/d8993c4f-b9f8-4b5c-9a56-40fb0b1d2799)
 
 ---  
 
-## The Dataset: CSIC 2010  
+## The Dataset: CSIC 2010 HTTP dataset
 
 The [CSIC 2010 HTTP dataset](http://www.isi.csic.es/dataset/) contains over **36,000 normal requests** and **25,000+ anomalous requests** (web attacks) targeting an e-commerce application. The data is structured into:  
 - **Normal Traffic (Training)**  
 - **Normal Traffic (Test)**  
 - **Anomalous Traffic (Test)**  
 
-While the dataset is designed for unsupervised learning, I opted for a **supervised approach** by combining normal and anomalous data into a labeled dataset.  
+While the dataset is designed for unsupervised learning, I started with a **supervised approach** by combining normal and anomalous data into a labeled dataset.  
+
+### **Key Challenges**  
+- **Unsupervised nature**: No labels for training, only normal traffic.  
+- **Raw text format**: HTTP logs need parsing into structured features.
 
 ---  
 
@@ -82,6 +90,22 @@ Once the data was parsed, I engineered features to help the model distinguish no
 
 ## Step 3: Model Training  
 
+## **Approach 1: Supervised Learning (Random Forest)**  
+
+### **Steps**  
+1. **Parsed HTTP logs** into structured fields (`Method`, `URL`, `Headers`, `Body`).  
+2. **Engineered features** using TF-IDF (1-2 word n-grams).  
+3. **Trained a Random Forest** on labeled data (normal vs. anomalous).  
+
+### **Results**  
+📊 **79% accuracy**  
+✅ **High precision on normal traffic (1.00)**  
+⚠️ **Lower precision on anomalies (0.55)**  
+
+**Takeaway:**  
+✔️ Works well when labeled data is available.  
+❌ Struggles with unseen attack patterns.  
+
 I chose a **Random Forest classifier** for its robustness with text data and ability to handle imbalanced datasets:  
 
 ```python
@@ -97,7 +121,7 @@ pipeline = Pipeline([
 
 ---  
 
-## Step 4: Evaluation  
+## Step 4.1: Evaluation  
 
 The model achieved **79% accuracy** on the test set, with:  
 - **High precision on normal traffic (1.00)** → Few false positives.  
@@ -111,27 +135,77 @@ The model achieved **79% accuracy** on the test set, with:
 3. **Feature Importance:**  
    - Revealed key n-grams (e.g., suspicious URL patterns).  
 
+---
+
+## **Approach 2: Unsupervised Learning**  
+
+Since real-world traffic often lacks anomaly labels, I tried two unsupervised methods:  
+
+### **1. Isolation Forest**  
+- **Idea:** Detects anomalies as "easy-to-isolate" outliers.  
+- **Implementation:**  
+  ```python
+  model = Pipeline([
+      ('tfidf', TfidfVectorizer(max_features=1000)),
+      ('clf', IsolationForest(contamination=0.1))
+  ])
+  model.fit(normal_training_data)
+  ```  
+- **Results:**  
+  ```
+              precision    recall  f1-score   support
+      Normal       0.61      0.90      0.73     36000
+   Anomalous       0.53      0.17      0.26     24668
+  ```  
+  ✅ **Catches 90% of normal traffic** (low false alarms).  
+  ❌ **Misses 83% of attacks** (low recall).  
+
+### **2. Autoencoder (Deep Learning)**  
+- **Idea:** Learns to reconstruct normal traffic; anomalies have high reconstruction error.  
+- **Implementation:**  
+  ```python
+  autoencoder = Model(inputs=input_layer, outputs=decoder)
+  autoencoder.compile(optimizer='adam', loss='mse')
+  autoencoder.fit(normal_data, normal_data, epochs=10)
+  ```  
+- **Results:**  
+  ```
+            precision    recall  f1-score   support
+           0       0.65      0.96      0.77     36000
+           1       0.80      0.23      0.36     24668
+  ```  
+  ✅ **Better balanced performance** (66% accuracy vs. 60% for Isolation Forest).  
+  ❌ Still **misses many attacks** (only 23% recall).
+  
 ---  
+## **Key Takeaways**  
 
-## Key Takeaways  
+| **Metric**       | **Supervised (RF)** | **Unsupervised (IF)** | **Unsupervised (AE)** |
+|------------------|---------------------|-----------------------|-----------------------|
+| **Accuracy**     | 79%                 | 60%                   | 66%                   |
+| **Anomaly Recall** | 71% (F1)           | 17%                   | 23%                   |
+| **Normal Recall** | 72%                | 90%                   | 96%                   |
 
+### **Insights**  
 1. **Parsing is Half the Battle:**  
    - Raw HTTP data requires careful preprocessing. The `parse_http_request` function was the backbone of this project.  
 2. **Text-Based Features Work:**  
    - Even simple TF-IDF features captured meaningful patterns in HTTP requests.  
 3. **Room for Improvement:**  
-   - Adding length-based features (e.g., URL length) or rule-based flags (e.g., detecting SQL keywords) could boost performance.  
+   - Adding length-based features (e.g., URL length) or rule-based flags (e.g., detecting SQL keywords) could boost performance.
+     
+✔️ **Supervised learning wins when labels exist**—better at catching attacks.  
+✔️ **Unsupervised is realistic for production** (no need for labeled attacks).  
+⚠️ **Hybrid approach may be best**:  
+   - Use unsupervised for baseline filtering.  
+   - Add rules/SVM for known attack patterns.  
 
 ---  
 
-## Next Steps  
-
-1. **Advanced Feature Engineering:**  
-   - Extract URL parameters, count special characters, or flag rare user agents.  
-2. **Model Enhancements:**  
-   - Try SVMs or neural networks for comparison.  
-3. **Deployment:**  
-   - Wrap the model in an API for real-time traffic monitoring.  
+## **Next Steps**  
+1. **Feature engineering**: Add URL length, special characters, SQL keywords.  
+2. **Ensemble models**: Combine Isolation Forest + Autoencoder predictions.  
+3. **Adaptive thresholds**: Adjust anomaly sensitivity dynamically.  
 
 ---  
 
