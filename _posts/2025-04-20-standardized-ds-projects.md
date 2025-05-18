@@ -115,6 +115,8 @@ Beyond the directory structure, several files are crucial for a well-managed dat
         pip install -r requirements.txt
         ```
 
+**Note**: *pip freeze* saves all packages in the environment including those that you don't use in your current project (if you don't have virtualenv).
+
 3.  **`.gitignore`**: This file tells Git which files or directories to ignore (e.g., virtual environment folders like `venv/`, large data files not meant for version control, credential files, system files like `.DS_Store`). Cookiecutter templates usually provide a sensible default `.gitignore`.
         ```bash
         echo "folder_name/" >> .gitignore
