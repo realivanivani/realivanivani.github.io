@@ -105,6 +105,11 @@ Beyond the directory structure, several files are crucial for a well-managed dat
         pip install pipreqs
         pipreqs /path/to/project
         ```
+        or pipreqsnb, outside of the notebook, as so:
+        ```bash
+        pip install pipreqsnb
+        pipreqsnb your_notebook.ipynb
+        ```      
     * **Alternative: Freeze dependencies:** Once your project works and all packages are installed, run:
         ```bash
         pip freeze > requirements.txt
