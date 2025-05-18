@@ -100,7 +100,12 @@ Beyond the directory structure, several files are crucial for a well-managed dat
         * On Windows: `.\venv\Scripts\activate`
         Your terminal prompt should change, indicating the environment is active.
     * **Install your dependencies:** Use `pip install` for all necessary libraries (e.g., `pip install pandas numpy scikit-learn matplotlib jupyterlab`).
-    * **Freeze dependencies:** Once your project works and all packages are installed, run:
+    * **Generate requirements with [pipreqs](https://github.com/bndr/pipreqs):** Once your project works run this to generate requirements, based on imports:
+        ```bash
+        pip install pipreqs
+        pipreqs /path/to/project
+        ```
+    * **Alternative: Freeze dependencies:** Once your project works and all packages are installed, run:
         ```bash
         pip freeze > requirements.txt
         ```
