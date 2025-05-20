@@ -1,5 +1,5 @@
 ---
-title: 'Mastering the Data Puzzle: Effective Data Management for Powerful AI'
+title: 'Effective Data Management in the AI World'
 date: 2025-05-18
 permalink: /posts/2025/05/blog-post-2/
 tags:
