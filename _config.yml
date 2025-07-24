@@ -24,7 +24,7 @@ author:
   avatar           : "slika_s_papagajom2.jpeg"
   name             : "Ivan Ivani, PhD."
   bio              : "Data Scientist"
-  location         : "Novi Sad, Serbia"
+  location         : # "Novi Sad, Serbia"
   employer         : "Continental"
   uri              : # URL
   email            : "jasamivanivani@gmail.com" 
