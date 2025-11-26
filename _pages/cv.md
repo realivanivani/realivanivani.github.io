@@ -22,7 +22,7 @@ Work experience
 ======
 
 ## Analytics Engineer Consultant in HTEC
-![Red Guacamaya on red cross aid boxes](/images/parrot consulting data_chatgpt.png){: .align-right width="200"}
+![Red Guacamaya Consulting](/images/parrot_consulting_data_chatgpt.png){: .align-right width="200"}
 Most recently, I joined the Tech Excellence Office at HTEC as a Data Analyst Lead, focusing on advanced data solutions for global enterprise clients such as Apple, Zuux, ASML, and Marlin. My role centers on translating strategic business goals into performant data architectures. I design and implement end-to-end analytical ecosystems using a modern stack—Databricks for unified compute and ML workflows, dbt for modular transformation logic and lineage visibility, DuckDB for high-speed local analytics, and Airflow to orchestrate complex dependencies at scale. In streaming environments, I leverage Kafka and Flink to build near real-time ingestion and enrichment layers, supporting low-latency decision systems. As part of the Tech Excellence group, I act as both a solutions architect and a lead analyst: auditing existing client infrastructure, benchmarking performance, and identifying opportunities to improve reliability, observability, and cost efficiency. I frequently prototype analytical frameworks, define data contracts, and guide teams through best practices in versioned pipelines, CI/CD, and governance.
 
 ## Data Manager & Analyst in International Committee of the Red Cross, Geneva/Amman/Damascus/Jerusalem/Caracas
