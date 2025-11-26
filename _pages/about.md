@@ -12,7 +12,7 @@ redirect_from:
 
 Welcome to my personal webpage! You are either lost or just interested in how I'm doing. 😊 For those who do not know me, let me briefly introduce myself...
 
-🎓 I am a Data Scientist with a PhD in Bioinformatics and Computational Chemistry from the University of Barcelona.
+🎓 I am a Data Solutions Consultant with a PhD in Bioinformatics and Computational Chemistry from the University of Barcelona.
 
 💼 My career spans from academic research, data management and analytics in the humanitarian sector, to innovative data science in the automotive industry, bringing a wealth of experience and expertise.
 
