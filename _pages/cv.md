@@ -8,7 +8,9 @@ redirect_from:
 
 I was born and raised in Novi Sad, Serbia, but as soon as I got scholarships I went abroad to study.
 
-## Education
+Education
+======
+
 ![image](https://github.com/user-attachments/assets/6578c945-19c0-44f8-bf01-62a5aa710568){: .align-right width="200"}  
 My academic journey took me to Prague, where I studied physics at Charles University after receiving a scholarship. I earned my MSc degree in Biophysics there, working on Raman spectroscopy of biomolecules. During my time in Prague, I became fluent in Czech, adding to my native Serbian. Later, I moved to Barcelona to pursue a PhD in Structural Biology under Professor Modesto Orozco. This period was crucial for my development as a scientist, and I was fortunate to contribute to some exciting research. This period was crucial for my development as a scientist, and I was fortunate to contribute to some exciting research. While in Barcelona, I also became fluent in Spanish.
 
@@ -18,6 +20,10 @@ My scientific career began in computational biology, where I specialized in forc
 
 Work experience
 ======
+
+## Analytics Engineer Consultant in HTEC
+![Red Guacamaya on red cross aid boxes](/images/parrot consulting data_chatgpt.png){: .align-right width="200"}
+Most recently, I joined the Tech Excellence Office at HTEC as a Data Analyst Lead, focusing on advanced data solutions for global enterprise clients such as Apple, Zuux, ASML, and Marlin. My role centers on translating strategic business goals into performant data architectures. I design and implement end-to-end analytical ecosystems using a modern stack—Databricks for unified compute and ML workflows, dbt for modular transformation logic and lineage visibility, DuckDB for high-speed local analytics, and Airflow to orchestrate complex dependencies at scale. In streaming environments, I leverage Kafka and Flink to build near real-time ingestion and enrichment layers, supporting low-latency decision systems. As part of the Tech Excellence group, I act as both a solutions architect and a lead analyst: auditing existing client infrastructure, benchmarking performance, and identifying opportunities to improve reliability, observability, and cost efficiency. I frequently prototype analytical frameworks, define data contracts, and guide teams through best practices in versioned pipelines, CI/CD, and governance.
 
 ## Data Manager & Analyst in International Committee of the Red Cross, Geneva/Amman/Damascus/Jerusalem/Caracas
 ![Red Guacamaya on red cross aid boxes](/images/parrot_on_redcross_boxes.jfif){: .align-right width="200"}
@@ -35,8 +41,8 @@ Skills
 ======
 ![image](https://github.com/user-attachments/assets/97f9a168-b4fb-4ebb-b3b1-f97f501714d0){: .align-right width="200"}  
 Over the years, I’ve developed a robust toolbox tailored to cross-domain data challenges. My expertise includes:  
-- **Data Science & Analytics**: Python (pandas, scikit-learn, NumPy, statsmodels), SQL (SSMS, Posgresql), PySpark, and advanced statistical modeling.  
-- **Data Engineering**: ETL pipeline design (AWS Data Engineering certification), data warehousing (Redshift, Snowflake, Oracle), and cloud-based workflows on **AWS (S3, Lambda, EC2)**.  
+- **Data Science & Analytics**: Python (pandas, scikit-learn, NumPy, statsmodels), SQL (MS SQL, Posgresql), PySpark, and advanced statistical modeling.  
+- **Data Engineering**: ETL pipeline design (AWS Data Engineering certification), data warehousing (Redshift, Databricks, Oracle), and cloud-based workflows on **AWS (S3, Lambda, EC2)**.  
 - **Visualization**: Power BI, Tableau, and matplotlib/seaborn, used to deliver actionable insights across technical and non-technical audiences.  
 - **Machine Learning**: Regression, clustering, time-series forecasting, and computer vision models (OpenCV, PyTorch, TensorFlow/Keras).  
 - **Governance & Security**: Data access control, anonymization, GDPR-compliant workflows, and secure handling of sensitive humanitarian data.  
