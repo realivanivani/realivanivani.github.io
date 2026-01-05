@@ -11,7 +11,7 @@ tags:
   - Open-source
 ---
     
-Business Intelligence (BI) tools have become mission-critical for data-driven organizations. They enable analysts and decision-makers to transform raw data into actionable insights via dashboards, reports, and visual storytelling. The landscape spans from **commercial platforms** widely adopted in enterprises to **open-source engines** popular in technical environments. But in 2026, the Business Intelligence (BI) landscape is no longer just about "making charts." It is a battle between ecosystem locked-in giants and the rising tide of open-source flexibility. Whether you are a startup founder in Berlin or a data head at a Fortune 500 in New York, choosing the right tool determines how quickly your data turns into a competitive advantage. Let's take a dive into most used BI tools.
+Business Intelligence (BI) tools have become mission-critical for data-driven organizations. They enable analysts and decision-makers to transform raw data into actionable insights via dashboards, reports, and visual storytelling. The landscape spans from **commercial platforms** widely adopted in enterprises to **open-source engines** popular in technical environments. But in 2026, the Business Intelligence (BI) landscape is no longer just about "making charts." It is a battle between ecosystem locked-in giants and the rising tide of open-source flexibility. Whether you are a startup founder in Berlin or a data head at a Fortune 500 in New York, choosing the right tool determines how quickly your data turns into a competitive advantage. Let's take a dive into most used BI tools. ***[Check out this cool interactive webpage that I created for this purpose](https://curious-youtiao-d48555.netlify.app/)***
 
 ---
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/2aa327e6-7b6b-474d-b4d9-89079c01178a" />
@@ -55,7 +55,8 @@ Let's take a look at the free alternatives.
 ## **2. Market Overview & Adoption Trends**
 
 For the sake of comparison, I've created an interactive webpage that compares these 5 tools, their pros and cons, market overview and adoptation trends.
-https://github.com/realivanivani/realivanivani.github.io/blob/master/_posts/2025-10-04-BI-tools-comparison.tsx
+
+https://curious-youtiao-d48555.netlify.app/
 
 Here is a quick comparison:
 
