@@ -1,6 +1,6 @@
 ---
 title: "Anomaly Detection in HTTP Requests: From Supervised to Unsupervised Learning"
-excerpt: "Anomaly detection Supersied and Unsupervised Machine Learning to detect malicious HTTP requests by parsing raw traffic logs, engineering TF-IDF features, and achieving 79% accuracy—highlighting the importance of preprocessing in cybersecurity ML tasks1<br/><img src='/images/http-anomaly-detection.png'
+excerpt: "Anomaly detection Supersied and Unsupervised Machine Learning to detect malicious HTTP requests by parsing raw traffic logs, engineering TF-IDF features, and achieving 79% accuracy—highlighting the importance of preprocessing in cybersecurity ML tasks1<br/><img src='/images/http-anomaly-detection.png'>"
 collection: portfolio
 ---
 ## Background
