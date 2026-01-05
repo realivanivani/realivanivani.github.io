@@ -56,8 +56,8 @@ Let's take a look at the free alternatives.
 
 For the sake of comparison, I've created an interactive webpage that compares these 5 tools, their pros and cons, market overview and adoptation trends.
 
-https://curious-youtiao-d48555.netlify.app/
-
+[Take a look at an interactive dashboard comparing the five tools](https://curious-youtiao-d48555.netlify.app/) 
+ 
 Here is a quick comparison:
 
 ### **Enterprise BI Leaders**
@@ -84,7 +84,7 @@ Here is a quick comparison:
 
 ---
 
-## **3. Head-to-Head Tool Comparison**
+## **3.1 Head-to-Head Tool Comparison**
 
 | Dimension         | Power BI                               | Tableau                   | Looker                     | Grafana                       | Apache Superset                |
 | ----------------- | -------------------------------------- | ------------------------- | -------------------------- | ----------------------------- | ------------------------------ |
@@ -98,7 +98,7 @@ Here is a quick comparison:
 
 ---
 
-## **3. Tool-Level Pros & Cons**
+## **3.2 Tool-Level Pros & Cons**
 
 | Tool | Pros | Cons |
 | --- | --- | --- |
