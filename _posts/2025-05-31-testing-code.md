@@ -11,10 +11,6 @@ tags:
   - python
 --- 
 
-Here’s a revised version that keeps the structure, links, and technical content intact, but smooths the language so it reads like a knowledgeable practitioner explaining things naturally and thoughtfully.
-
----
-
 Santiago Valdarrama recently called out a trend many of us have felt firsthand: serious testing is quietly slipping out of software development. [As he noted](https://www.linkedin.com/posts/svpino_theres-an-epidemic-of-people-building-software-activity-7326222829912211456-A06k/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAIsDd8BXWI_dI37Qu6FG4V1q4VYwEscMcc), we’re in an age of *impressive demos*, where slick presentations often matter more than whether the code is actually solid. This shows up especially when working with Large Language Models (LLMs) or doing what’s commonly called “vibe-coding”—an exploratory, trial-and-error style of writing code.
 
 There’s no denying that LLMs and rapid prototyping can speed things up dramatically. But they also add a layer of unpredictability. Without proper testing, it becomes very easy to ship something that looks fine but behaves unreliably. The real question, then, is how we stay confident in our code. The answer isn’t complicated: disciplined testing practices still matter—arguably more than ever—especially when AI tools are in the mix.
