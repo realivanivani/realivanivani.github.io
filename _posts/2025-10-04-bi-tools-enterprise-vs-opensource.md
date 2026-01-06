@@ -205,5 +205,3 @@ This video provides a direct, head-to-head comparison between the two leading op
 
 * **Technical engineer perspectives on Superset & open BI*. ([reddit.com][10])
 * **Open Source viz tools Reddit comparison*. ([reddit.com][11])
-
-**Would you like me to create a specific data modeling guide for one of these tools?**
