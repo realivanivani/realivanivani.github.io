@@ -11,7 +11,7 @@ tags:
 ---
 I'll be honest, I've always been a bit of a Databricks fanboy. Their approach to solving data problems is just elegant. The way they've pushed the lakehouse architecture forward, their genuinely thoughtful implementation of AI features, the speed of their platform, it all just clicks. So when my company asked me to get certified (quotas, you know how it goes), I was actually excited about it.
 
-<img width="320" height="240" alt="image" src="https://github.com/user-attachments/assets/c348b6f3-028e-424b-a4a5-e89b63a24b15" />
+<br/><img src='/images/ok-nice-grafic.gif'>
 
 ## 1. Starting Point: Data Analyst Associate
 
