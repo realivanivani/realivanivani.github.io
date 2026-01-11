@@ -1,5 +1,5 @@
 ---
-title: 'CI/CD for PowerBI Dashboard development'
+title: 'CI/CD Implementation for Power BI Dashboards: From Fabric Pipelines to Code-Based Deployment'
 date: 2025-12-03
 permalink: /posts/2025/12/blog-post-1/
 tags:
@@ -10,9 +10,6 @@ tags:
   - Bitbucket
   - Pipeline
 ---
-
-# CI/CD for Power BI Dashboards: From Fabric Pipelines to Bitbucket Automation
-
 Power BI dashboards rarely start complex. A dataset here, a couple of visuals there, maybe a slicer or two. But give it a few weeks and new measures, refreshed logic, stakeholder tweaks, performance tuning, etc, and suddenly that “simple report” is business-critical.
 
 That’s usually the moment teams realize they need **proper versioning, controlled deployments, and repeatable releases**. In other words: CI/CD.
