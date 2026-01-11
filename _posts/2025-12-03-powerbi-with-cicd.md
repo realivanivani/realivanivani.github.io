@@ -24,7 +24,9 @@ In this article, I’ll walk through:
 3. **How to build a true CI/CD pipeline for Power BI using Bitbucket**
 4. **Practical lessons and limitations you should be aware of**
 
-No fluff, no sales pitch — just a pragmatic view from someone who has seen Power BI dashboards evolve in real production environments.
+No fancy stuff, just a pragmatic view from someone who has seen Power BI dashboards evolve in real production environments.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/25a813f9-b223-4f4c-b7c2-baf0f5e2b5b6" />
 
 ---
 
