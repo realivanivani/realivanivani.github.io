@@ -100,7 +100,7 @@ Plot twist: I scored *better* on the GenAI exam than the Data Analyst one. All t
 
 ## Looking Ahead
 
-According to the [official guidance](https://docs.databricks.com/), the Professional-level certifications are a whole different beast. They're less about "can you do this task" and more about "can you design and optimize production systems." If you're aiming for the [Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional) certification, expect deep dives into:
+First of all, I want to get more practical experience before taking more exams. But the next steps would definitely be Professionals. According to the [official guidance](https://docs.databricks.com/), the Professional-level certifications are a whole different beast. They're less about "can you do this task" and more about "can you design and optimize production systems." If you're aiming for the [Data Engineer Professional](https://www.databricks.com/learn/certification/data-engineer-professional) certification, expect deep dives into:
 
 - **Delta Live Tables** (now called Lakeflow Declarative Pipelines)
 - **Unity Catalog** for governance (this is huge in the new exam version)
@@ -119,7 +119,7 @@ If you're considering getting certified: do it. The learning path is well-struct
 
 And hey, if I can do it while juggling a full-time job and company quotas, so can you.
 
-Good luck out there. You've got this. 🚀
+Good luck out there. You've got this. 
 
 ---
 
