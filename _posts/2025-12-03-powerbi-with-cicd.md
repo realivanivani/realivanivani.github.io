@@ -33,9 +33,8 @@ Power BI is often treated differently from application code. Reports are edited 
 
 Here are the most common failure modes:
 
-* A fix in DEV accidentally breaks PROD
-* Someone overwrites a dataset while “just testing something”
-* No one knows which PBIX version is currently live
+* Someone overwrites a production dashboard while “just testing something”
+* Developing a dashboard directly on PROD data, while slowing everything down
 * Rollbacks mean re-publishing an old file from someone’s laptop
 * Multiple analysts editing the same report with no coordination
 
