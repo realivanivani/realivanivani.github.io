@@ -1,7 +1,7 @@
 ---
 title: 'My Dive into the Sepsis Challenge: Can Data Help Us Fight Back?'
-date: 2025-04-01
-permalink: /posts/2025/04/blog-post-1/
+date: 2024-12-12
+permalink: /posts/2024/12/blog-post-1/
 tags:
   - machine learning
   - sepsis
