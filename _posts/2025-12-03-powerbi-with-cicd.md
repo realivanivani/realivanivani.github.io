@@ -77,7 +77,7 @@ This works especially well when:
 
 Think of Deployment Pipelines as *managed CI/CD*: opinionated, easy to use, and tightly integrated.
 
-📚 References:
+References:
 
 * Fabric Deployment Pipelines (Microsoft Docs):
   [https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/overview](https://learn.microsoft.com/en-us/fabric/cicd/deployment-pipelines/overview)
@@ -103,7 +103,7 @@ This approach is ideal when:
 
 It’s closer to how software teams work — structured, review-driven, and traceable.
 
-📚 References:
+References:
 
 * Fabric Git Integration:
   [https://learn.microsoft.com/en-us/fabric/cicd/git-integration/overview](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/overview)
