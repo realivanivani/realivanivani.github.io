@@ -127,21 +127,22 @@ Let’s walk through that setup.
 
 ---
 
-## A Practical CI/CD Pipeline for Power BI Using Bitbucket
+## Code-Based Deployment Using Power BI/Fabric REST APIs
 
-This approach is inspired by real-world implementations and builds on the idea that **Power BI deployments are API-driven**.
+This approach is inspired by real-world implementations and builds on the idea that **Power BI deployments are API-driven**. The workflow differs from the first two approaches by extracting the report development process from the Power BI Service environment.
 
-### High-Level Architecture
 
-At a conceptual level, the pipeline looks like this:
+### Process Flow & Core Mechanics
 
-1. **PBIX files stored in Bitbucket**
-2. **Bitbucket Pipelines** triggered on commit or merge
-3. **PowerShell scripts** handle authentication and deployment
-4. **Power BI REST API** publishes content to workspaces
-5. Separate workspaces represent **DEV, TEST, PROD**
+A typical API-driven workflow is orchestrated by an external tool and interacts with Fabric programmatically.
 
-Simple, explicit, and fully automated.
+  * 1.	**Local Development:** A Power BI Developer works on a report file locally, using the source-control-native Power BI Project (.pbip) format. 
+  * 2.	**Git Commit:** The developer commits the changes to a central Git repository (e.g., Bitbucket).
+  * 3.	**Pipeline Trigger:** The commit to a specific branch (e.g., main or develop) automatically triggers a CI/CD pipeline in the external tool.
+  * 4.	**Automated Deployment:** The pipeline executes a predefined script. This script authenticates with the Fabric REST API (typically using a Service Principal) and programmatically publishes or updates the Power BI items in a target workspace, such as the Test environment.
+  * 5.	**Automated Promotion:** Subsequent stages in the pipeline can be configured to promote the content to Production. These stages are often triggered by a manual approval or a successful Git merge, where the pipeline script then uses the API to deploy the validated content to the Production workspace.
+
+**Reference:** https://medium.com/@miiihiir/build-a-true-ci-cd-pipeline-for-power-bi-pro-no-premium-needed-64f10e9b2b41
 
 ---
 
@@ -153,11 +154,11 @@ A clean structure matters more than people expect.
 powerbi/
 ├── dashboards/
 │   ├── sales_dashboard/
-│   │   ├── sales.pbix
+│   │   ├── sales.pbip
 │   │   ├── params.json
 │   │   └── deploy.ps1
 │   └── finance_dashboard/
-│       ├── finance.pbix
+│       ├── finance.pbip
 │       └── deploy.ps1
 ├── ci/
 │   ├── auth.ps1
@@ -169,7 +170,7 @@ powerbi/
 
 Key ideas:
 
-* **PBIX lives in Git**, even if it’s binary
+* Unlike a monolithic .pbix file, a **.PBIP** saves the report and model definitions as individual, human-readable text files (JSON, TMDL) in a folder structure. This is the **key enabler for professional CI/CD**, as it allows for granular change tracking and meaningful diffs in pull requests.
 * Deployment logic is **scripted, not manual**
 * Environment-specific settings are externalized
 
@@ -225,7 +226,7 @@ pipelines:
 Each step:
 
 * Authenticates to Azure AD
-* Uploads PBIX via Power BI REST API
+* Uploads PBIP via Power BI REST API
 * Confirms deployment success
 
 This makes releases boring — which is exactly what you want.
@@ -238,14 +239,14 @@ Deployment is just an API call.
 
 Behind the scenes:
 
-* PBIX is uploaded to a specific workspace
+* PBIP is uploaded to a specific workspace
 * Dataset and report are created or replaced
 * Parameters can be updated per environment
 * Refresh schedules can be configured
 
 This approach works with **Power BI Pro**, no Premium required.
 
-📚 Reference:
+Reference:
 
 * Power BI REST API – Imports:
   [https://learn.microsoft.com/en-us/rest/api/power-bi/imports](https://learn.microsoft.com/en-us/rest/api/power-bi/imports)
@@ -274,7 +275,6 @@ Your pipeline decides where code goes — humans don’t.
 
 A few honest limitations:
 
-* **PBIX files are binary** → diffs are limited
 * Merge conflicts still require coordination
 * You’re deploying entire artifacts, not incremental changes
 * Model-level testing is still manual or custom
