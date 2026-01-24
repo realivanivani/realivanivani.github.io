@@ -10,7 +10,7 @@ tags:
   - hypothesis
 ---
 
-One of the most consistently expected skills for a Data Scientist today is **A/B testing**, often referred to as split testing. While it’s sometimes introduced as a simple optimization technique, in practice it’s much closer to applied science: translating vague business questions into testable hypotheses, designing robust experiments, and turning results into production-ready decisions.
+One of the most consistently expected skills for a Data Scientist today is **A/B testing**, often referred to as split testing. While it’s sometimes described as a simple optimization technique, in practice it’s much closer to applied science where you have to translate vague business questions into testable hypotheses, design robust experiments, and eventually, turn results into production-ready decisions.
 
 At its core, A/B testing applies the scientific method to product and business problems. It plays a central role in data-driven organizations, especially where product, marketing, and engineering teams need fast, reliable feedback loops. Whether you’re comparing two versions of a checkout flow, ranking algorithm, or personalization strategy, the goal is the same: isolate the effect of a change and measure its impact on clearly defined KPIs such as conversion, engagement, retention, or revenue.
 
