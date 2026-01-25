@@ -1,6 +1,6 @@
 ---
 title: 'Power BI + MCP Tutorial: AI-Powered Report Development without Data Leaks and Additional Cost'
-date: 2026-01-25
+date: 2026-01-15
 permalink: /posts/2026/01/blog-post-2/
 tags:
   - PowerBI
