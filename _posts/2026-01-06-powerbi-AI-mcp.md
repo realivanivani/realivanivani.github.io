@@ -99,33 +99,67 @@ What actually gets shared when you use an MCP server? More than you might think.
 
 If you're using a managed AI service, all of this goes to their servers. For sensitive data, that's potentially a compliance violation or a competitive intelligence leak.
 
-## A Practical Approach for Power BI + AI
+## A Practical Implementation Framework
 
-So how do you actually implement this responsibly? Here's a framework that balances capability with caution:
+If you're going to implement AI-powered Power BI development, here's how to do it without blowing things up:
 
-**Step 1: Choose Your Setup Path**
-For most users, VS Code with GitHub Copilot offers the easiest setup. The Power BI Modeling MCP extension handles technical configuration and auto-updates. Claude Desktop provides a simpler interface but requires manual configuration. Pick based on your comfort level with technical setup.
+**Phase 1: Environment Setup (Week 1-2)**
 
-**Step 2: Start Small and Safe**
-Don't connect AI to your production model on day one. Create a test model with synthetic data that mirrors your production structure but contains no sensitive information. Learn what the AI can do, where it succeeds, where it makes mistakes—all without risk.
+Choose your model hosting approach based on your security requirements:
+- **Local models** (Ollama, LM Studio) for maximum control, but you need serious hardware—minimum 32GB RAM, dedicated GPU with 16GB+ VRAM for anything beyond toy models
+- **Azure OpenAI** for enterprise compliance, moderate operational overhead
+- **Claude Teams/Enterprise** for ease of use with contractual data protections
 
-**Step 3: Configure Security Properly**
-Implement data masking policies that automatically detect and mask sensitive data before it's returned to the AI, supporting compliance requirements like GDPR and HIPAA. Set up audit logging so you know exactly what queries were run and what data was accessed.
+Set up proper MCP server configuration. Use the Remote MCP Server initially (read-only access) to explore capabilities without risk. Only enable the Modeling server (write access) after you understand the behavior.
 
-**Step 4: Create Clear Instructions**
-Curate a base set of instructions and context about your model that the AI can reference, which requires active maintenance—it's more of a communication skill than a technical one. Document your naming conventions, your DAX patterns, your business rules. The better your instructions, the better the AI's output.
+**Critical security configurations:**
+```json
+{
+  "mcpServers": {
+    "powerbi": {
+      "command": "node",
+      "args": ["path/to/powerbi-mcp-server"],
+      "env": {
+        "POWERBI_READONLY": "true",  // Start here
+        "POWERBI_REQUIRE_APPROVAL": "true"  // Human approval for writes
+      }
+    }
+  }
+}
+```
 
-**Step 5: Use Targeted Prompts**
-Instead of vague requests like "improve my model," be specific:
-- "Add YTD, Prior Year, and YoY growth measures for Revenue, using our standard display folder structure"
-- "Review all measures in the Sales table and add descriptions explaining the business logic"
-- "Identify any relationships using both-direction filtering and document why each one is necessary"
+**Phase 2: Controlled Testing (Week 3-4)**
 
-**Step 6: Validate Everything**
-Build validation into your workflow. For critical measures, manually review the DAX logic. For bulk operations, spot-check a sample before deploying to production. Moving measures between tables can be destructive and result in errors in visuals, so test changes in development first.
+Create a synthetic test model that mirrors your production structure but contains no real data. Use the same table names, relationships, and measure patterns, but populate with fake data.
 
-**Step 7: Manage Your Context Budget**
-Regularly review which MCP servers and tools are active. Disable anything you're not actively using for the current session. This keeps your context window available for actual work rather than unused tool definitions.
+Test specific use cases systematically:
+1. Measure generation for known patterns
+2. Bulk documentation tasks
+3. Relationship modifications
+4. Schema restructuring
+
+For each test, validate:
+- Correctness: Does the DAX produce expected results?
+- Performance: Query plan analysis shows no regression
+- Style: Does it match your organization's patterns?
+- Documentation: Are descriptions accurate and useful?
+
+**Phase 3: Production Pilot (Week 5-8)**
+
+Select a low-risk project—perhaps a departmental dashboard or an exploratory analysis model. Define clear boundaries:
+- AI can generate measures, humans must review before deployment
+- AI can suggest optimizations, humans decide whether to implement
+- AI cannot modify production models directly
+
+Implement a validation workflow:
+```
+1. AI generates measure → Draft state
+2. Analyst reviews logic → Testing state  
+3. Analyst validates results → Staged state
+4. Second analyst approves → Production state
+```
+
+Never skip the double-validation step for business-critical calculations.
 
 ## What Could Go Wrong (And How to Prepare)
 
