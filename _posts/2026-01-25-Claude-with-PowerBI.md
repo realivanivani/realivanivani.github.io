@@ -14,7 +14,7 @@ We are entering the age of **Agentic Analytics**. As I've recently written in my
 
 This blog explores the technical "how-to" of setting up this bridge using **Claude Desktop** and **VS Code**, along with the specific prompts that can turn a four-hour modeling session into a five-minute conversation.
 
-<img width="1024" height="490" alt="image" src="https://github.com/user-attachments/assets/3ea65a11-a25a-4c6d-b521-15038f3348f7" />
+<img width="1024" height="796" alt="image" src="https://github.com/user-attachments/assets/f98ecedb-350d-48be-9096-7323ef6ec966" />
 
 ---
 
