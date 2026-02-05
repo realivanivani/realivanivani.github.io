@@ -1,6 +1,6 @@
 ---
 title: 'Data Pipeline Patterns You’ll Actually See in the Real World'
-date: 2026-02=05
+date: 2026-02-05
 permalink: /posts/2026/02/blog-post-1/
 tags:
   - Data Pipelines
