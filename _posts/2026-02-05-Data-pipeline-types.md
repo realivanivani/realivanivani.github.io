@@ -5,6 +5,7 @@ permalink: /posts/2026/02/blog-post-1/
 tags:
   - Data Pipelines
   - ETL
+  - Python
   - Analytics
   - ML
 ---
@@ -13,6 +14,8 @@ If you’ve spent any time in data engineering, you’ve probably realized one t
 In a great breakdown, *Seattle Data Guy* walks through the most common data pipeline patterns that show up in real companies. What’s refreshing is that these patterns aren’t theoretical—they reflect how organizations *actually* evolve their data workflows, often starting from very manual processes and gradually layering in automation, standardization, and analytics maturity.
 
 This post builds on that video and expands the taxonomy into a practical reference you can use when designing or reviewing pipelines in the wild.
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/edbc3bbc-ce55-4166-91a7-b3d5d260568f" />
 
 ---
 
