@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-![Red parrot doing Data Science work](/images/red_parrot_cubicle_2.jfif){: .align-right width="250"}
+![Red parrot doing Data Science work](/images/gpt_caricature_of_me.png){: .align-right width="250"}
 
 Welcome to my personal webpage! You are either lost or just interested in how I'm doing. 😊 For those who do not know me, let me briefly introduce myself...
 
