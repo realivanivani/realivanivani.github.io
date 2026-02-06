@@ -1,4 +1,4 @@
----
+a---
 title: 'SQL Query Builders with LLMs: Lessons from Uber’s QueryGPT (and the Parts They Skipped)'
 date: 2026-02-12
 permalink: /posts/2026/02/blog-post-2/
@@ -14,7 +14,7 @@ SQL has always been the quiet tax on data work. Nobody talks about it in strateg
 
 Uber felt this pain at scale. According to their own numbers, engineers were running **~1.2 million interactive SQL queries per month**, with each query taking roughly **10 minutes to author**. That’s not because Uber engineers don’t know SQL. It’s because navigating massive, evolving schemas is cognitively expensive.
 
-Their response wasn’t another semantic layer or schema refactor. Instead, they built **QueryGPT**—an LLM-powered SQL query builder designed to compress that 10-minute loop into something closer to 3 minutes. And to be fair, they pulled it off.
+Their response wasn’t another semantic layer or schema refactor. Instead, they built **QueryGPT**—an LLM-powered SQL query builder designed to compress that 10-minute loop into something closer to 3 minutes.
 
 This post breaks down how Uber built QueryGPT, how they evaluated it, where it shines, and where—intentionally or not—it exposes deeper structural issues in modern data platforms. I’ll end with what I think actually matters if you’re considering an LLM-based query builder yourself.
 
