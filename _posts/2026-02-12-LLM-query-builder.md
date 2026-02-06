@@ -1,5 +1,5 @@
 ---
-title: 'SQL Query Builders with LLMs: Lessons from Uber’s QueryGPT (and the Parts They Skipped)'
+title: 'SQL Query Builders with LLMs: Lessons from Uber’s QueryGPT'
 date: 2026-02-12
 permalink: /posts/2026/02/blog-post-2/
 tags:
@@ -10,7 +10,6 @@ tags:
   - Naming Conventions
   - Best Practices
 ---
-
 SQL has always been the quiet tax on data work. Nobody talks about it in strategy decks, but everyone feels it. Writing queries isn’t hard in theory—it’s the constant context-switching that hurts. Which schema was that in? Which version of the table is “the right one”? Why does this column exist twice with two different names?
 
 Uber felt this pain at scale. According to their own numbers, engineers were running **~1.2 million interactive SQL queries per month**, with each query taking roughly **10 minutes to author**. That’s not because Uber engineers don’t know SQL. It’s because navigating massive, evolving schemas is cognitively expensive.
