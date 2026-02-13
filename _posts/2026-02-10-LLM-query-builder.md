@@ -1,6 +1,6 @@
 ---
 title: 'SQL Query Builders with LLMs: Lessons from Uber’s QueryGPT'
-date: 2026-02-12
+date: 2026-02-10
 permalink: /posts/2026/02/blog-post-2/
 tags:
   - SQL
