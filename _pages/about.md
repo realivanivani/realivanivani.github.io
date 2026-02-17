@@ -10,11 +10,11 @@ redirect_from:
 
 ![Red parrot doing Data Science work](/images/gpt_caricature_of_me.png){: .align-right width="250"}
 
-Welcome to my personal webpage! You are either lost or just interested in how I'm doing. 😊 For those who do not know me, let me briefly introduce myself...
+Welcome to my personal webpage! You have probably explored my Linkedin page... (gotcha ya!) 😊 As you probably do not know me, let me briefly introduce myself...
 
 🎓 I am a Data Solutions Consultant with a PhD in Bioinformatics and Computational Chemistry from the University of Barcelona.
 
-💼 My career spans from academic research, data management and analytics in the humanitarian sector, to innovative data science in the automotive industry, bringing a wealth of experience and expertise.
+💼 My career spans from academic research, data management and analytics in the humanitarian sector, innovative data science in the automotive industry, to consulting big companies in state-of-the-art data solutions. I'm bringing a wealth of experience and expertise.
 
 🧬 My research has explored the fields of Structural Biology, focusing on Molecular Dynamics of DNA and proteins, force-field parameterization, Quantum Mechanics calculations, drug discovery and experimental validation.
 
