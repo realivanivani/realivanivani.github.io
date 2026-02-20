@@ -21,7 +21,7 @@ Claude Code (often referred to as CC in developer circles) is not just another A
 
 <img width="1226" height="886" alt="image" src="https://github.com/user-attachments/assets/89a3d9ef-5077-4fa0-b0cf-aade5118be1c" />
 
-In his comprehensive breakdown, **Simon Scrapes** explores how users can evolve from basic prompting to building fully autonomous agentic systems. This guide explores the **seven levels of Claude Code mastery**, explaining why each level is critical for your workflow and how to implement them effectively.
+There are many tutorials on using CC, like [Meta's engineer usage of CC](https://www.youtube.com/watch?v=1SJGGUeEbQs) or [4 Hours full course](https://www.youtube.com/watch?v=QoQBzR1NIqI) are really good for starting out, but I'm gonmna go to one comprehensive breakdown done by **Simon Scrapes** explores how users can evolve from basic prompting to building fully autonomous agentic systems. This guide explores the **seven levels of Claude Code mastery**, explaining why each level is critical for your workflow and how to implement them effectively.
 
 ---
 
@@ -179,4 +179,5 @@ The **mindset** of Level 1 (Intentional Planning) and Level 2 (Explicit Constrai
 By moving through these seven levels, you transition from using Claude as a simple chatbot to commanding an autonomous workforce. Whether you are just starting with **Level 1 Planning** or scaling with **Level 7 Ralph Loops**, Claude Code offers a level of leverage that was previously impossible for a single developer.
 
 **Watch the full tutorial here:** [Every Level of Claude Code Explained](https://www.youtube.com/watch?v=Y09u_S3w2c8)
+**Also, check these tutorials as well, which I found very helpful:** https://www.youtube.com/watch?v=1SJGGUeEbQs, https://www.youtube.com/watch?v=QoQBzR1NIqI
 
