@@ -149,7 +149,7 @@ Level 7 is the pinnacle of Claude Code: full autonomy. Using a "Ralph Loop," you
 
 ## One Extra point: Are These Principles Transferable to Codex?
 
-As there is a big [debate](https://www.youtube.com/watch?v=1SJGGUeEbQs) on whether Claude Code or Codex is better with coding projects (which I might cover in next blog posts), I wanted to understand if these princples are generally transferable to Codex too (if I eventually decide to switch to Codex). What better than to ask an LLM to generate some output for me... Let's see what Gemini 3.1 said:
+As there is a big [debate](https://www.youtube.com/watch?v=1SJGGUeEbQs) on whether [Claude Code or Codex](https://www.youtube.com/watch?v=_GAc6SFoQ9k) is better with coding projects (which I might cover in next blog posts), I wanted to understand if these princples are generally transferable to Codex too (if I eventually decide to switch to Codex). What better than to ask an LLM to generate some output for me... Let's see what Gemini 3.1 said:
 
 With the rise of various AI-native development tools, a common question arises: *Can these 7 levels of mastery be applied to OpenAI's Codex or the tools powered by it (like GitHub Copilot)?*
 
