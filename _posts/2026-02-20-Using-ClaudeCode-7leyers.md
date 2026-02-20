@@ -13,6 +13,8 @@ tags:
 ---
 I've been very resiliant to trying coding assistance for some time now. It's not that I am stubborn like some IT folks out there, it's just that I'm lazy to learn (plus I don't have much time with 3 kids and a full-time job). But, I've been following and reading a lot about the topic and I decided to try **Claude Code**! And to write a blog post about it. So, this is my take on properly using CC based on my research and testing so far (just 2 weeks in :) Here we go..
 
+<img width="1996" height="1330" alt="image" src="https://github.com/user-attachments/assets/71bd5a1f-b82e-4002-a9f4-aa7ba815bf4f" />
+
 ### What is Claude Code
 
 Claude Code (often referred to as CC in developer circles) is not just another AI chat interface; it is a high-performance command-line tool designed to live within your development environment. Claude Code is not a mere chatbot; it is a junior developer living in your terminal. To get the most leverage, you must move beyond "typing and hoping" and start building systems of verification and automation.
@@ -147,7 +149,7 @@ Level 7 is the pinnacle of Claude Code: full autonomy. Using a "Ralph Loop," you
 
 ## One Extra point: Are These Principles Transferable to Codex?
 
-As there is a big debate on whether Claude Code or Codex is better with coding projects (which I might cover in next blog posts), I wanted to understand if these princples are generally transferable to Codex too (if I eventually decide to switch to Codex). What better than to ask an LLM to generate some output for me... Let's see what Gemini 3.1 said:
+As there is a big [debate](https://www.youtube.com/watch?v=1SJGGUeEbQs) on whether Claude Code or Codex is better with coding projects (which I might cover in next blog posts), I wanted to understand if these princples are generally transferable to Codex too (if I eventually decide to switch to Codex). What better than to ask an LLM to generate some output for me... Let's see what Gemini 3.1 said:
 
 With the rise of various AI-native development tools, a common question arises: *Can these 7 levels of mastery be applied to OpenAI's Codex or the tools powered by it (like GitHub Copilot)?*
 
