@@ -26,7 +26,8 @@ In this post, I’m breaking down the hard-earned lessons from others that showe
 
 Firstly, I came across a great tutorial that outlines advanced strategies for using Claude Code (CC) to move beyond basic development into highly optimized, automated, and cost-effective workflows. The central theme is providing Claude with the right "eyes" and "constraints" to ensure it remains accurate and context-efficient. Here are the 10 ways to use CC that proved to be quite useful:
 
-https://packaged-media.redd.it/txsdr4jy6phg1/pb/m2-res_854p.mp4?m=DASHPlaylist.mpd&var=sgpssan&v=1&e=1773025200&s=2c44f9c97cab7cd7c6a68a9a2bee05e2b3ff72a2
+https://github.com/user-attachments/assets/0873794e-c7ec-4351-8baa-22bb71b63023
+
 
 1. **Utilize the `insights` Command:** Use this built-in command to analyze your past sessions. It generates a report that "roasts" your working patterns and highlights friction points, allowing you to refine your `claude.md` to prevent repeated mistakes [[00:28](http://www.youtube.com/watch?v=TmsH-RIHvas&t=28)].
 2. **Automate Project Documentation:** Instead of writing it yourself, use a specialized prompt to have Claude generate a documentation suite, including a PRD, `architecture.md`, `decision.md`, and a token-efficient `feature.json` to track implementation progress [[01:38](http://www.youtube.com/watch?v=TmsH-RIHvas&t=98)].
