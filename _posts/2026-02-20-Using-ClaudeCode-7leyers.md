@@ -38,6 +38,8 @@ Check out the summary of all the tips from the CC creator himself, [Boris Cherny
 
 **Useful link** *Click on [here](https://i.redd.it/j553eyqrjqlg1.jpeg) for the ClaudeCode CheatSheet, to make you experience even more hacker-like*
 
+<img width="3286" height="1666" alt="image" src="https://github.com/user-attachments/assets/16fef2d9-e168-40f2-9b8d-cb79a927a420" />
+
 ---
 
 ### Level 1: Intentional Planning (The "Zero-Action" Rule)
@@ -56,8 +58,6 @@ Check out the summary of all the tips from the CC creator himself, [Boris Cherny
 ---
 
 ### Level 2: The `claude.md` Protocol
-
-
 
 At Level 2, you stop repeating yourself. The Philosophy is: **Onboarding Your AI Coworker**, you treat Claude like a new team member who needs to know your house rules, tech stack, and preferences.
 
