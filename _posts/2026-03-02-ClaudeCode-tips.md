@@ -68,9 +68,9 @@ Theo suggests reaching for these files only as a last resort when a model consis
 * Steer the model away from a persistent wrong pattern with a specific dependency [[18:01](http://www.youtube.com/watch?v=GcNu6wrLTJc&t=1081)].
 
 ---
-## What does the research say?
+## That's all cool, but what does the research say?
 
-There were 2 interesting papers that came out recently that shed light on industry pracice of using repository-level context files like `CLAUDE.md` and `AGENT.md`, and "Skills"—structured packages. They are interesting because they talk suggest a completely opposite approach! I will need some time to test and trial and see where I fit in with all of this, but in the meantime, let's see the summaries of these works.
+There were 2 interesting papers that came out recently that shed light on industry pracice of using repository-level context files like `CLAUDE.md` and `AGENT.md`, and "Skills"—structured packages. They are interesting because they actually suggest a completely opposite approach! I will need some time to test and trial and see where I fit in with all of this, but in the meantime, let's see the summaries of these works.
 
 ### 1. Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?
 
