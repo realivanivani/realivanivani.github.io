@@ -26,6 +26,8 @@ In this post, I’m breaking down the hard-earned lessons from others that showe
 
 Firstly, I came across a great tutorial that outlines advanced strategies for using Claude Code (CC) to move beyond basic development into highly optimized, automated, and cost-effective workflows. The central theme is providing Claude with the right "eyes" and "constraints" to ensure it remains accurate and context-efficient. Here are the 10 ways to use CC that proved to be quite useful:
 
+https://packaged-media.redd.it/txsdr4jy6phg1/pb/m2-res_854p.mp4?m=DASHPlaylist.mpd&var=sgpssan&v=1&e=1773025200&s=2c44f9c97cab7cd7c6a68a9a2bee05e2b3ff72a2
+
 1. **Utilize the `insights` Command:** Use this built-in command to analyze your past sessions. It generates a report that "roasts" your working patterns and highlights friction points, allowing you to refine your `claude.md` to prevent repeated mistakes [[00:28](http://www.youtube.com/watch?v=TmsH-RIHvas&t=28)].
 2. **Automate Project Documentation:** Instead of writing it yourself, use a specialized prompt to have Claude generate a documentation suite, including a PRD, `architecture.md`, `decision.md`, and a token-efficient `feature.json` to track implementation progress [[01:38](http://www.youtube.com/watch?v=TmsH-RIHvas&t=98)].
 3. **Context 7 MCP for Live Docs:** Connect the Context 7 Model Context Protocol (MCP) to fetch the latest documentation for libraries and frameworks. This fills the gap between the model's training data and current software updates, reducing dependency errors [[02:30](http://www.youtube.com/watch?v=TmsH-RIHvas&t=150)].
@@ -64,15 +66,18 @@ Theo suggests reaching for these files only as a last resort when a model consis
 * Enforce specific behaviors the model lacks (e.g., "always run type checks after changes") [[24:55](http://www.youtube.com/watch?v=GcNu6wrLTJc&t=1495)].
 * Steer the model away from a persistent wrong pattern with a specific dependency [[18:01](http://www.youtube.com/watch?v=GcNu6wrLTJc&t=1081)].
 
-### What does the research say?
+---
+## What does the research say?
 
-There were 2 interesting papers that came out recently that shed light on industry pracice of using repository-level context files like `CLAUDE.md` and `AGENT.md`, and "Skills"—structured packages. Let's see the summaries of these works.
+There were 2 interesting papers that came out recently that shed light on industry pracice of using repository-level context files like `CLAUDE.md` and `AGENT.md`, and "Skills"—structured packages. They are interesting because they talk suggest a completely opposite approach! I will need some time to test and trial and see where I fit in with all of this, but in the meantime, let's see the summaries of these works.
 
-#### 1. Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?
+### 1. Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?
 
 The paper **"Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?"** (arXiv:2602.11988), published in February 2026 by researchers at ETH Zurich, provides a rigorous empirical evaluation of the common industry practice of using repository-level context files like `CLAUDE.md` and `AGENT.md`.
 
-The study's findings largely support the skeptical view that these files, especially when automatically generated, often do more harm than good.
+The study's findings largely support the skeptical view that these files, especially when automatically generated, often do more harm than good. Here is the quote:
+
+> Across multiple coding agents and LLMs, we find that context files tend to reduce task success rates compared to providing no repository context, while also increasing inference cost by over 20%. Behaviorally, both LLM-generated and developer-provided context files encourage broader exploration (e.g., more thorough testing and file traversal), and coding agents tend to respect their instructions. Ultimately, we conclude that unnecessary requirements from context files make tasks harder, and human-written context files should describe only minimal requirements.
 
 ### **Core Findings: Performance & Cost**
 
@@ -97,13 +102,14 @@ The researchers propose several strategies to optimize output and reduce costs:
 1. **Resolves Ambiguity:** It clarifies something the code itself cannot (e.g., "always use this specific library for X even if others are installed").
 2. **Caches Expensive Inferences:** It provides information that an agent *could* eventually figure out but only at a high token cost (e.g., complex CI setup instructions).
 
-
 * **Keep it Minimal:** The study recommends omitting LLM-generated files entirely and keeping human-written files under **60–100 lines**.
 * **Maintenance Discipline:** Treat these files like a cache. Stale entries—such as those describing old architectural patterns or migrations—are actively harmful because agents will follow them with the same diligence as current ones.
 
-#### SkillsBench: Evaluating Skill Discovery and Selection in Language Model Agents
+### SkillsBench: Evaluating Skill Discovery and Selection in Language Model Agents
 
-The paper **"SkillsBench: Evaluating Skill Discovery and Selection in Language Model Agents"** (arXiv:2602.12670) evaluates how "Skills"—structured packages of procedural knowledge—impact the performance of AI agents across diverse domains.
+The paper **"SkillsBench: Evaluating Skill Discovery and Selection in Language Model Agents"** (arXiv:2602.12670) evaluates how "Skills"—structured packages of procedural knowledge—impact the performance of AI agents across diverse domains. Here is an important finding of their study:
+
+> We test 7 agent-model configurations over 7,308 trajectories. Curated Skills raise average pass rate by 16.2 percentage points(pp), but effects vary widely by domain (+4.5pp for Software Engineering to +51.9pp for Healthcare) and 16 of 84 tasks show negative deltas. Self-generated Skills provide no benefit on average, showing that models cannot reliably author the procedural knowledge they benefit from consuming. Focused Skills with 2–3 modules outperform comprehensive documentation, and smaller models with Skills can match larger models without them.
 
 ### **Key Findings and Performance Impact**
 
