@@ -36,6 +36,7 @@ Since I know that most of you will just scroll through this post and not read it
 
 Check out the summary of all the tips from the CC creator himself, [Boris Cherny](https://www.youtube.com/watch?v=B-UXpneKw6M)
 
+**Useful link** *Click on [here](https://i.redd.it/j553eyqrjqlg1.jpeg) for the ClaudeCode CheatSheet, to make you experience even more hacker-like*
 ---
 
 ### Level 1: Intentional Planning (The "Zero-Action" Rule)
