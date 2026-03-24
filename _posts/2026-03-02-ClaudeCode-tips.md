@@ -1,7 +1,7 @@
 ---
 title: 'Lessons learned from the first weeks of using Claude Code'
 date: 2026-03-02
-permalink: /posts/2026/02/blog-post-1/
+permalink: /posts/2026/03/blog-post-1/
 tags:
   - coding
   - Claude Code
