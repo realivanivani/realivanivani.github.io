@@ -1,7 +1,7 @@
 ---
 title: 'Data Analysis with Claude: Delegate, Verify, Trust'
 date: 2026-03-24
-permalink: /posts/2026/02/blog-post-2/
+permalink: /posts/2026/03/blog-post-2/
 tags:
   - Data Analysis
   - Claude Code
