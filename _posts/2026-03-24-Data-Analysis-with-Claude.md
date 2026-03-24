@@ -9,6 +9,7 @@ tags:
   - Diligence
   - data workflow
   - real-life examples
+  - AI
 ---
 
 There is a useful video on Anthropic's Academy channel titled ["Data Analysis with AI"](https://www.youtube.com/watch?v=Zzn-g8lvLMA). — a short, practical walkthrough that introduces one idea that I think deserves a wider audience: the **Delegation-Diligence Loop**. The rest of this post is built around that idea, extended with a case study from my own work in automotive manufacturing analytics, and a frank assessment of who actually benefits from this approach and where the limits are.
